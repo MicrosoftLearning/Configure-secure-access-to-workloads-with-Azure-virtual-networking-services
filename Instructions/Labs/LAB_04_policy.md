@@ -37,7 +37,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Rule collection action|**Allow**|
     |Rule collection group| **DefaultApplicationRuleCollectionGroup**|
 
-- Under **rules** use the values in the following table and select **Add** 
+1. Under **rules** use the values in the following table and select **Add** 
 
     |Property|  Value |
     |:---------|:---------|
@@ -48,7 +48,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Destination type|FQDN|
     |Destination|**dev.azure.com, azure.microsoft.com**|
 
-2.  Create a **network rule collection** that contains a single IP Address rule by using the values in the following table. For any property that is not specified, use the default value.
+1.  Create a **network rule collection** that contains a single IP Address rule by using the values in the following table. For any property that is not specified, use the default value.
 
     |Property|	Value|
     |:---------|:---------|
@@ -58,7 +58,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Rule collection action|**Allow**|
     |Rule collection group| **DefaultNetworkRuleCollectionGroup**|
 
--  Under **rules** use the values in the following table and select **Add**    
+1. Under **rules** use the values in the following table and select **Add**    
 
     |Property|	Value|
     |:---------|:---------|
