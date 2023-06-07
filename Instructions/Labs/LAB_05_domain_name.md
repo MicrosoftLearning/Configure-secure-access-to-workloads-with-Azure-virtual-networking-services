@@ -14,9 +14,12 @@ Your organization requires workloads to record and resolve domain names internal
 
 ### Architecture diagram
 
-|Network solution | Tasks|
-| --- | --- |
-| :::image type="content" source="../media/task-5.png" alt-text="Diagram of Azure DNS linked to a virtual network." border="true"::: | <ul><li>Create and configure a private DNS zone. </li><li> Create and configure DNS records. </li><li>  Configure DNS settings on a virtual network.</li></ul> |
+![Diagram of Azure DNS linked to a virtual network.](../Media/task-5.png)
+
+### Skilling tasks
+- Create and configure a private DNS zone. 
+- Create and configure DNS records.
+- Configure DNS settings on a virtual network.
 
 ## Exercise instructions
 

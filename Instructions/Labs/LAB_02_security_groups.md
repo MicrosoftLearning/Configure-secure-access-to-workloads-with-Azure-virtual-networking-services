@@ -14,9 +14,13 @@ Your organization requires control of the network traffic to and from the web ap
 
 ### Architecture diagram
 
-| Network solution  | Tasks|
-| --- | --- |
-| :::image type="content" source="../media/task-2.png" alt-text="Diagram that shows one ASG and NSG associated to a virtual network." border="true"::: | <ul><li>Create an NSG. </li><li> Create NSG rules. </li><li> Associate an NSG to a subnet. </li><li> Create and use Application Security Groups in NSG rules. </li></ul> |
+![Diagram that shows one ASG and NSG associated to a virtual network.](../Media/task-2.png)
+
+### Skilling tasks
+- Create an NSG.
+- Create NSG rules.
+- Associate an NSG to a subnet.
+- Create and use Application Security Groups in NSG rules.
 
 ## Exercise instructions
 

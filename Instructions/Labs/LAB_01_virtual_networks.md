@@ -16,9 +16,12 @@ To provide network isolation and segmentation for the web application, you creat
 
 ### Architecture diagram
 
-| Network solution  | Tasks|
-| --- | --- |
-| :::image type="content" source="../media/task-1.png" alt-text="Diagram that shows two virtual networks that are peered." border="true"::: | <ul><li>Create a virtual network </li><li> Create a subnet. </li><li>Configure vnet peering. </li></ul> |
+![Diagram that shows two virtual networks that are peered.](../Media/task-1.png)
+
+### Skilling tasks
+- Create a virtual network
+- Create a subnet
+- Configure vnet peering
 
 ## Exercise instructions
 
