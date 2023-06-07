@@ -10,10 +10,7 @@ lab:
 ## Scenario
 Your organization is looking to protect the web application from malicious traffic and block unauthorized access.
 
-In addition to NSG and ASG, a firewall can be configured to add an extra layer of security to the web application. A firewall protects the web application from malicious traffic and blocks unauthorized access with policies you configure. Azure Policy allows you to define a rule hierarchy and enforce compliance. 
-
-In this task you configure application rules and network rules for the firewall using Firewall Policy. You can use Azure Firewall Policy to manage rule sets that the Azure Firewall uses to filter traffic.
-
+In addition to NSG and ASG, a firewall can be configured to add an extra layer of security to the web application. A firewall protects the web application from malicious traffic and blocks unauthorized access with policies you configure. Network Traffic is subject to the firewall rules when you route your network traffic to the firewalll as the subnet default gateway. 
 
 
 ### Architecture diagram
@@ -24,7 +21,7 @@ In this task you configure application rules and network rules for the firewall 
 - Create an Azure Firewall.
 - Create and configure a firewall policy.
 - Create and configure a route table.
-- Link a route to a subnet.
+- Link a route table to a subnet.
 
 
 ## Exercise instructions
@@ -55,7 +52,7 @@ In this task you configure application rules and network rules for the firewall 
 
 1. Associate the **app-vnet-firewall-rt** route table to the **frontend** and **backend** subnets in **app-vnet**. 
 
-1. Create a route in the **app-vnet-firewall-rt** named **outbound-firewall** with address prefix **0.0.0.0/0** and **Next hop type**  **Virtual Appliance**. Use the private IP address of the firewall **@lab.Variable(PrivateIP)** for the **Next hop address**. [Learn more on creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+1. Create a route in the **app-vnet-firewall-rt** named **outbound-firewall** with address prefix **0.0.0.0/0** and **Next hop type**  **Virtual Appliance**. Use the private IP address of the firewall for the **Next hop address**. [Learn more on creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
 
 
-
+Now the outbound traffic from the front end and backend subnet will route to the firewall. 
