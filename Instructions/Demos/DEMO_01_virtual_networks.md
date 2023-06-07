@@ -17,7 +17,10 @@ In this demonstration, we will explore virtual networks.
 8.	Select the available resource group.
 9.	Enter a name for your virtual network. Point out the opportunity for naming conventions.
 10.	[Slide] Select a region for your network. Use this slide to discuss Azure geographies. 
-11. [Slide] Select the Security tab. Use this slide to highlight the security services briefly, these topics will be covered in more detail later in the course. Learn more, Services that can be deployed into a virtual network. Note we are only covering a few things to get the student started on their first lab.   
+11. [Slide] Select the Security tab. Use this slide to highlight the security services briefly, these topics will be covered in more detail later in the course. Learn more, Services that can be deployed into a virtual network. 
+    
+>**Note**: Note we are only covering a few things to get the student started on their first lab.   
+
 12.	[Slide] Select the IP Addresses tab. Use this slide to review: Plan virtual networks and subnets. Add or modify a subnet to demonstrate to students how to configure subnets. 
 13.	Click Review and ensure there are no validation errors.
 14.	Click Create and wait for the virtual network to be deployed. Point out the notification messages. 

@@ -26,8 +26,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 1. Create a new **application security group** named **app-backend-asg** in the **East US** region by using the **RG1** resource group.
 
-> [!NOTE] 
-> You are creating the application security group in the same region as the existing virtual network. 
+>**Note**: You are creating the application security group in the same region as the existing virtual network. 
 
     [Learn more about creating an application security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-application-security-groups).
 

@@ -26,8 +26,7 @@ To provide network isolation and segmentation for the web application, you creat
 ## Exercise instructions
 
 
-> [!NOTE]
-> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+>**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 > In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
 
 1. Create the Azure virtual network **app-vnet** by using the values in the following table:
