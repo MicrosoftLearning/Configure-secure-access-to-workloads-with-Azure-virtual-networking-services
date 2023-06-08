@@ -7,7 +7,7 @@ demo:
 
 In this demonstration, explore Azure Firewall.
 Review and create an Azure Firewall and Firewall policy.
-1.	[slide] Before beginning the demonstration, let's review what Azure Firewall is.
+1.	[Supporting Slide] Before beginning the demonstration, let's review what Azure Firewall is.
 2.	Access the Azure portal.
 3.	Create an Azure Firewall.
 4.	ⓘ on the Basics tab explain the configuration options available as you fill them out. 
