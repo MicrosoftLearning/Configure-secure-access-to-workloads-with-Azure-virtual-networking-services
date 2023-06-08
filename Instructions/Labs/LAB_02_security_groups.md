@@ -37,7 +37,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 5. Verify that both the **VM1** and **VM2** virtual machines are running.
 
-6. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**.
+6. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**. [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
 
 7. Verify that you have created an application security group named **app-backend-asg**.
 
