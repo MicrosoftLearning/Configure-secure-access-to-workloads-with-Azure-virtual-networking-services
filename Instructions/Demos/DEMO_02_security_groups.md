@@ -16,7 +16,7 @@ In this demonstration, we will explore security groups.
 
 1. Search for and select the **Network Security Groups**.
 
-1. Create a NSG explaining the settings as you go. 
+1. [Supporting Slide] Create a NSG explaining the settings as you go. 
  
 1. Wait for the new NSG to deploy.
 
@@ -24,7 +24,7 @@ In this demonstration, we will explore security groups.
 
 1. Select your new NSG.
 
-1. Discuss how the NSG can be associated with subnets or network interfaces.
+1. [Supporting Slide] Discuss how the NSG can be associated with subnets or network interfaces.
 
 1. Discuss the purpose inbound and outbound rules.  
 
@@ -33,14 +33,22 @@ In this demonstration, we will explore security groups.
 1. Create a new rule, explaining the settings as you go. Specifically discuss the service selection (like HTTPS) and the priority settings. 
  
 
-### Configure ASGs
- [Supporting Slide]
+### Create ASG
+ 
+1. [Supporting Slide] Search for and select the **Application Security Groups**.
+
+1. Create an ASG explaining the settings as you go. 
+ 
+1. Wait for the new ASG to deploy.
+
+1. Discuss how the ASG can be associated with NSG rules.
+
 
 ### Associate the NSGs 
-8.	Navigate to the NSG you created
-9.	Select Subnets from the Settings section.
-10.	In the Subnets page, select + Associate
-11.	Under Associate subnet, select your Virtual network.
+1.	Navigate to the NSG you created
+1.	Select Subnets from the Settings section.
+1.	In the Subnets page, select + Associate
+1.	Under Associate subnet, select your Virtual network.
 
 
 >**Note**: Students should now be able to complete LAB_02

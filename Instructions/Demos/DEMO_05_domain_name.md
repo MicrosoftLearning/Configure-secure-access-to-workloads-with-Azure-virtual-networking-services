@@ -32,15 +32,14 @@ In this demonstration, you will explore Azure DNS.
 1. Create an **A** record as an example. 
 
 **Link VNet for auto registration**
-[slide]
 
-8.	Once the DNS Zone is deployed review the overview page with the students.
-9.	link the private DNS zone to a virtual network, by creating a virtual network link.
-10.	On the left pane, select Virtual network links.
-11.	Select Add.
-12.	Type myLink for the Link name.
-13.	For Virtual network, select myAzureVNet.
-14.	Select the Enable auto registration check box.
-15.	Select OK.
+1.	Once the DNS Zone is deployed review the overview page with the students.
+1.	link the private DNS zone to a virtual network, by creating a virtual network link.
+1.	On the left pane, select Virtual network links.
+1.	Select Add.
+1.	Type myLink for the Link name.
+1.	For Virtual network, select myAzureVNet.
+1.	Select the Enable auto registration check box.
+1.	Select OK.
 
 >**Note**: Students should now be able to complete LAB_05

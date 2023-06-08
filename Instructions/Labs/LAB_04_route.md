@@ -4,7 +4,7 @@ lab:
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Operationalize and enforce policy to filter traffic
+# Lab: Route traffic to the Firewall
 
 
 ## Scenario

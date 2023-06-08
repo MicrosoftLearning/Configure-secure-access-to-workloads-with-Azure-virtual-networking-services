@@ -13,11 +13,14 @@ Review and create an Azure Firewall and Firewall policy.
 4.	ⓘ on the Basics tab explain the configuration options available as you fill them out. 
 5.	Accept the other default values, then select Review + create.
 6.	After deployment is completed, go to the firewall resource, and review the overview page. 
-7.	Note the IP address assigned. 
+
 
 ### Configure an application rule 
+
+1. [Supporting Slide] Azure Firewall policy rules
+
 This is the application rule that allows outbound access to www.google.com.
-1.	Open the Test-FW-RG resource group, and select the fw-test-pol firewall policy.
+1.	Navigate to the firewall policy you created.
 2.	Select Application rules.
 3.	Select Add a rule collection.
 4.	For Name, enter App-Coll01.
@@ -47,7 +50,7 @@ This is the network rule that allows outbound access to two IP addresses at port
 10.	For Protocol, select UDP.
 11.	For Destination Ports, enter 53.
 12.	For Destination type select IP address.
-13.	For Destination, enter 209.244.0.3,209.244.0.4.
+13.	For Destination, enter 209.244.0.3, 209.244.0.4.
 These are public DNS servers operated by CenturyLink.
 14.	Select Add.
 
