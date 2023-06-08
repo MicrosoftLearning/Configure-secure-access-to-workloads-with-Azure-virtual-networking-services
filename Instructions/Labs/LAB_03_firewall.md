@@ -73,7 +73,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Source|**10.1.0.0/23**|
     |Protocol|**https** |
     |Destination type|FQDN|
-    |Destination|**dev.azure.com, azure.microsoft.com**|
+    |Target FQDNs|**dev.azure.com, azure.microsoft.com**|
 
 1.  Create a **network rule collection** that contains a single IP Address rule by using the values in the following table. For any property that is not specified, use the default value.
 
