@@ -8,18 +8,33 @@ demo:
 
 In this demonstration, we will explore security groups. 
 
-### Review NSG rules
-1.	[slide] Before beginning the demonstration, let's review what Network security groups are and how they are used. 
+[Restrict access to PaaS resources - tutorial - Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-restrict-network-access-to-resources)
+
+### Create a network security group
+
+1. Access the Azure Portal.
+
+1. Search for and select the **Network Security Groups**.
+
+1. Create a NSG explaining the settings as you go. 
  
-2.	Access the Azure portal.
-3.	Search for and select Network Security Groups, select create. 
-4.	Enter a name and region, select Review + Create.
-5.	[slide] Go to the NSG and highlight the overview tab of the NSG and the default rules created. 
-6.	Select Inbound security rules from the Settings section 
-7.	Create a security rule  
+1. Wait for the new NSG to deploy.
+
+**Explore inbound and outbound rules**
+
+1. Select your new NSG.
+
+1. Discuss how the NSG can be associated with subnets or network interfaces.
+
+1. Discuss the purpose inbound and outbound rules.  
+
+1. Review the default inbound and outbound rules. 
+
+1. Create a new rule, explaining the settings as you go. Specifically discuss the service selection (like HTTPS) and the priority settings. 
+ 
 
 ### Configure ASGs
- [slide]
+ [Supporting Slide]
 
 ### Associate the NSGs 
 8.	Navigate to the NSG you created
