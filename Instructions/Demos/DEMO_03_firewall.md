@@ -5,6 +5,8 @@ demo:
 ---
 ## Demonstration – Create and configure Azure Firewall
 
+**Note:** Azure Firewall can take a few minutes to deploy.
+
 In this demonstration, explore Azure Firewall.
 Review and create an Azure Firewall and Firewall policy.
 1.	[Supporting Slide] Before beginning the demonstration, let's review what Azure Firewall is.
@@ -53,17 +55,4 @@ This is the network rule that allows outbound access to two IP addresses at port
 13.	For Destination, enter 209.244.0.3, 209.244.0.4.
 These are public DNS servers operated by CenturyLink.
 14.	Select Add.
-
-### Test the firewall
-Now, test the firewall to confirm that it works as expected.
-1.	Connect a remote desktop to firewall public IP address and sign in to the Srv-Work virtual machine.
-2.	Open Internet Explorer and browse to https://www.google.com.
-3.	Select OK > Close on the Internet Explorer security alerts. You should see the Google home page.
-4.	Browse to https://www.microsoft.com. You should be blocked by the firewall.
-
-So now you've verified that the firewall rules are working:
-- You can browse to the one allowed FQDN, but not to any others.
-- You can resolve DNS names using the configured external DNS server.
- 
->**Note**: Students should now be able to complete LAB_03
 

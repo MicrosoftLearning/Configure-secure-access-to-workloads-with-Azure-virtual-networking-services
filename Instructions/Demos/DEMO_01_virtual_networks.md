@@ -10,6 +10,9 @@ In this demonstration, you will create virtual networks.
 
 **Note:** You can use the suggested values for the settings, or your own custom values if you prefer.
 
+**Note:** An **[interactive lab simulation for virtual networks](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%204?azure-portal=true)** and **[Virtual network peering](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%209?azure-portal=true)** is available that allows you to click through a similar lab if you are unable to do a live demonstration. You may find slight differences between the interactive simulation and the suggested demo, but the core concepts and ideas being demonstrated are the same. 
+
+
 [Quickstart: Create a virtual network - Azure portal](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)
 
 ### Create a virtual network in the portal
