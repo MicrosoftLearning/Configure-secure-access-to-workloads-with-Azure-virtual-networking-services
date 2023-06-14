@@ -47,4 +47,21 @@ A route table can be associated to zero or more subnets. Route tables aren't ass
  
 >**Note**: You can only associate a route table to subnets in virtual networks that exist in the same Azure location and subscription as the route table.
 
+### Test the firewall
+Now, test the firewall to confirm that routing and firewall policies are working as expected. 
+
+1.	Connect a remote desktop to firewall public IP address and sign in to the Srv-Work virtual machine.
+2.	Open Internet Explorer and browse to https://www.google.com.
+3.	Select OK > Close on the Internet Explorer security alerts. You should see the Google home page.
+4.	Browse to https://www.microsoft.com. You should be blocked by the firewall.
+
+So now you've verified that the firewall rules are working:
+- You can browse to the one allowed FQDN, but not to any others.
+- You can resolve DNS names using the configured external DNS server.
+ 
+>**Note**: Students should now be able to complete LAB_03
+
+
+
+
 >**Note**: Students should now be able to complete LAB_04

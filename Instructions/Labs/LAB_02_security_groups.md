@@ -29,18 +29,18 @@ Your organization requires control of the network traffic to and from the web ap
 >**Note**: You are creating the application security group in the same region as the existing virtual network. 
 
  
-2. Create a **network security group** named **app-vnet-nsg** in **RG1** resource group. [Learn more about creating a network security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
+1. Create a **network security group** named **app-vnet-nsg** in **RG1** resource group. [Learn more about creating a network security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
 
-3. Associate the **app-vnet-nsg** to the **backend** subnet in the **app-vnet**. [Learn more about creating a network security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
+1. Associate the **app-vnet-nsg** to the **backend** subnet in the **app-vnet**. [Learn more about creating a network security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
 
-4. Create an inbound security rule named **AllowSsh** in the **app-vnet-nsg** network security group to allow incoming **TCP** traffic on **port 22** to reach the **app-backend-asg** application security group. For any property that is not specified, use the default value. [Learn more about creating a network security group rule](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
+1. Create an inbound security rule named **AllowSsh** in the **app-vnet-nsg** network security group to allow incoming **TCP** traffic on **port 22** to reach the **app-backend-asg** application security group. For any property that is not specified, use the default value. [Learn more about creating a network security group rule](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
 
-5. Verify that both the **VM1** and **VM2** virtual machines are running.
+1. Verify that both the **VM1** and **VM2** virtual machines are running.
 
-6. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**.
+1. Verify that you have created an application security group named **app-backend-asg**.
 
-7. Verify that you have created an application security group named **app-backend-asg**.
+1. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**.
 
-8. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
+1. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
 
-9. Verify that you have configured the **AllowSSH** incoming security rule to use **app-backend-asg** as the destination.
+1. Verify that you have configured the **AllowSSH** incoming security rule to use **app-backend-asg** as the destination.

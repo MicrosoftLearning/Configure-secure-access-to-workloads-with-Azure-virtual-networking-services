@@ -10,7 +10,7 @@ In this demonstration, you will explore Azure DNS.
 [Tutorial: Host your domain and subdomain - Azure DNS](https://docs.microsoft.com/azure/dns/dns-delegate-domain-azure-dns)
 
 
-**Create a DNS zone**
+**Create a private DNS zone**
 
 1. Access the Azure Portal.
 
