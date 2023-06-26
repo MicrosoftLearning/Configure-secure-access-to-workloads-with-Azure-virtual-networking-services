@@ -5,19 +5,24 @@ demo:
 ---
 ## Demonstration – Create and configure Azure Firewall
 
+**Note:** Azure Firewall can take a few minutes to deploy.
+
 In this demonstration, explore Azure Firewall.
 Review and create an Azure Firewall and Firewall policy.
-1.	[slide] Before beginning the demonstration, let's review what Azure Firewall is.
+1.	[Supporting Slide] Before beginning the demonstration, let's review what Azure Firewall is.
 2.	Access the Azure portal.
 3.	Create an Azure Firewall.
 4.	ⓘ on the Basics tab explain the configuration options available as you fill them out. 
 5.	Accept the other default values, then select Review + create.
 6.	After deployment is completed, go to the firewall resource, and review the overview page. 
-7.	Note the IP address assigned. 
+
 
 ### Configure an application rule 
+
+1. [Supporting Slide] Azure Firewall policy rules
+
 This is the application rule that allows outbound access to www.google.com.
-1.	Open the Test-FW-RG resource group, and select the fw-test-pol firewall policy.
+1.	Navigate to the firewall policy you created.
 2.	Select Application rules.
 3.	Select Add a rule collection.
 4.	For Name, enter App-Coll01.
@@ -47,20 +52,7 @@ This is the network rule that allows outbound access to two IP addresses at port
 10.	For Protocol, select UDP.
 11.	For Destination Ports, enter 53.
 12.	For Destination type select IP address.
-13.	For Destination, enter 209.244.0.3,209.244.0.4.
+13.	For Destination, enter 209.244.0.3, 209.244.0.4.
 These are public DNS servers operated by CenturyLink.
 14.	Select Add.
-
-### Test the firewall
-Now, test the firewall to confirm that it works as expected.
-1.	Connect a remote desktop to firewall public IP address and sign in to the Srv-Work virtual machine.
-2.	Open Internet Explorer and browse to https://www.google.com.
-3.	Select OK > Close on the Internet Explorer security alerts. You should see the Google home page.
-4.	Browse to https://www.microsoft.com. You should be blocked by the firewall.
-
-So now you've verified that the firewall rules are working:
-- You can browse to the one allowed FQDN, but not to any others.
-- You can resolve DNS names using the configured external DNS server.
- 
->**Note**: Students should now be able to complete LAB_03
 
