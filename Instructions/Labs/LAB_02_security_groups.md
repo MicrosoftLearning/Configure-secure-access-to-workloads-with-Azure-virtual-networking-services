@@ -40,7 +40,7 @@ Your organization requires control of the network traffic to and from the web ap
    ```powershell
    $RGName = "RG1"
    
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateUri https://raw.githubusercontent.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/main/Instructions/Labs/azuredeploy.json
    ```
   
 2. Verify that both the **VM1** and **VM2** virtual machines are running.
