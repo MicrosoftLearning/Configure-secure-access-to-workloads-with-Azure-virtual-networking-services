@@ -35,12 +35,20 @@ Your organization requires control of the network traffic to and from the web ap
 
 1. Create an inbound security rule named **AllowSsh** in the **app-vnet-nsg** network security group to allow incoming **TCP** traffic on **port 22** to reach the **app-backend-asg** application security group. For any property that is not specified, use the default value. [Learn more about creating a network security group rule](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
 
-1. Verify that both the **VM1** and **VM2** virtual machines are running.
+1. Deploy the following ARM template using Cloud Shell to create the VMs needed for this exercise:
 
-1. Verify that you have created an application security group named **app-backend-asg**.
+   ```powershell
+   $RGName = "RG1"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   ```
+  
+2. Verify that both the **VM1** and **VM2** virtual machines are running.
 
-1. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**. [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
+3. Verify that you have created an application security group named **app-backend-asg**.
 
-1. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
+4. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**. [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
 
-1. Verify that you have configured the **AllowSSH** incoming security rule to use **app-backend-asg** as the destination.
+5. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
+
+6. Verify that you have configured the **AllowSSH** incoming security rule to use **app-backend-asg** as the destination.

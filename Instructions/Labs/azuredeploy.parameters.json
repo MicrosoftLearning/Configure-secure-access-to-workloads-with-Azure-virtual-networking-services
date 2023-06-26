@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_VM1_name": {
+            "value": "VM1"
+        },
+        "virtualMachines_VM2_name": {
+            "value": "VM2"
+        },
+        "publicIPAddresses_VM1_ip_name": {
+            "value": "VM1-ip"
+        },
+        "publicIPAddresses_VM2_ip_name": {
+            "value": "VM2-ip"
+        },
+        "virtualNetworks_app_vnet_name": {
+            "value": "app-vnet"
+        },
+        "networkInterfaces_VM1_nic_name": {
+            "value": "VM1-nic"
+        },
+        "networkInterfaces_VM2_nic_name": {
+            "value": "VM2-nic"
+        }
+    }
+}
