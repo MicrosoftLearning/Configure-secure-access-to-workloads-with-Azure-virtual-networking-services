@@ -93,7 +93,7 @@
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
-                            "storageAccountType": "Premium_LRS"                        },
+                            "storageAccountType": "Standard_LRS"                        },
                         "deleteOption": "Detach",
                         "diskSizeGB": 30
                     },
@@ -150,7 +150,7 @@
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
-                            "storageAccountType": "Premium_LRS"
+                            "storageAccountType": "Standard_LRS"
                         },
                         "deleteOption": "Detach",
                         "diskSizeGB": 30
