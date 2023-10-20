@@ -91,6 +91,6 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
     Learn more on [creating an application rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule) and [creating a network rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-a-network-rule).
 
-
+1. Verify that the Azure Firewall and Firewall Policy provisioning state show **Succeeded**.
 
 
