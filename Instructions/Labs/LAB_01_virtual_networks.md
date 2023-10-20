@@ -55,7 +55,7 @@ To provide network isolation and segmentation for the web application, you creat
     |Subnet address range|	**10.0.0.0/24**| 
 
 
-1. Review the address space and subnet configurations of the existing virtual network **app-vnet** in the **RG1** resource group.
+1. Confirm both virtual networks have deployed.
 
 1. Peer the two virtual networks to allow traffic to flow in both directions between the **app-vnet** and **shared-services-vnet** virtual networks. Use the values in the following table: 
 
