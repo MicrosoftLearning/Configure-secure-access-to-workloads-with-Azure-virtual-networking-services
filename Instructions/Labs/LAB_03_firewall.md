@@ -28,8 +28,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
 1.  Create a subnet named **AzureFirewallSubnet** in the **app-vnet** virtual network by using a subnet address range of **10.1.63.0/24**.
 
 1.  Create a firewall by using the values in the following table. For any property that is not specified, use the default value.
-
-**Note:** Azure Firewall can take a few minutes to deploy.
+    >**Note**: Azure Firewall can take a few minutes to deploy.
 
     | Property | Value    |
     |:---------|:---------|
