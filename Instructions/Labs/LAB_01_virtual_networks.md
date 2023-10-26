@@ -1,4 +1,4 @@
----
+![ClipWindowsGIF](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/assets/62559534/26fb0421-6837-46d1-af0f-9efc8b4351f4)---
 lab:
     title: 'Exercise: Provide network isolation and segmentation for the web application'
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
@@ -9,9 +9,8 @@ lab:
 
 ## Scenario
 
-The IT department needs network isolation and segmentation for the web application. Once the virtual network is created, the next step would be to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
+The IT department needs network isolation and segmentation for the web application. To provide network isolation and segmentation for the web application, you need to create an Azure virtual network with subnets that the IT team provided. Once the virtual network is created, the next step is to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
 
-To provide network isolation and segmentation for the web application, you create an Azure virtual network and configure subnets and virtual network peering to achieve secure and isolated network communication.  
 
 
 ### Architecture diagram
