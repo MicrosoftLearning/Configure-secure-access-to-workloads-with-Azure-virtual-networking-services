@@ -28,9 +28,11 @@ Now that a firewall is in place with policies that enforce your organizations se
 
 1. Create a route table named **app-vnet-firewall-rt** in the **RG1** resource group using the East US region.
 
+    [Learn more on creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+
 1. Associate the **app-vnet-firewall-rt** route table to the **frontend** and **backend** subnets in **app-vnet**. 
 
-1. Create a route in the **app-vnet-firewall-rt** named **outbound-firewall** with address prefix **0.0.0.0/0** and **Next hop type**  **Virtual Appliance**. Use the private IP address of the firewall for the **Next hop address**. [Learn more on creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+1. Create a route in the **app-vnet-firewall-rt** named **outbound-firewall** with address prefix **0.0.0.0/0** and **Next hop type**  **Virtual Appliance**. Use the private IP address of the firewall for the **Next hop address**.
 
 Now the outbound traffic from the front end and backend subnet will route to the firewall. 
 
