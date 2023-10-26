@@ -44,7 +44,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Virtual network | **app-vnet** (RG1)|
     |Public IP address | Add new: **fwpip**|
 
-    [Learn more on creating a firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal), [creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+    [Learn more on creating a firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal).
 
 
 
