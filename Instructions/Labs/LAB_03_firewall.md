@@ -1,4 +1,3 @@
-
 ---
 lab:
     title: 'Exercise: Protect the web application from malicious traffic and block unauthorized access'
