@@ -23,11 +23,63 @@ Your organization requires workloads to record and resolve domain names internal
 
 ## Exercise instructions
 
+### Create a private DNS zone
 
-1. Create a private DNS Zone named ****Contoso.com**** in the ****RG1**** resource group. 
+Azure Private DNS provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names available today.
 
-1. Create a Virtual Network Link within the private DNS Zone to the **app-vnet** named ****app-vnet-link**** with auto registration enabled.
+1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
 
-1. Create a DNS record set for VM2 named **backend** that is Type A with IP address **10.1.1.4** 
+1. Select **+ Create**.
+
+1. On the **Basics** tab of Create private DNS zone, enter the information as listed in the table below:
+
+    | Property | Value    |
+    |:---------|:---------|
+    |Subscription|**Select your subscription**|
+    |Resource group|**RG1**|
+    |Name|**contoso.com**|
+    |Region|**East US**|
+
+1. Select **Review + create** and then select **Create**.
+
+### Create a virtual network link to your private DNS zone
+
+1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
+
+1. Select **contoso.com**.
+
+1. Select **+ Virtual network link**.
+
+1. Select **+ Add"**
+
+1. On the **Basics** tab of Create virtual network link, enter the information as listed in the table below:
+
+    | Property | Value    |
+    |:---------|:---------|
+    |Link name|**app-vnet-link**|
+    |Virtual network|**app-vnet**|
+    |Enable auto registration|**Enabled**|
+
+1. Select **OK**
+
+### Create a DNS record set
+
+1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
+
+1. Select **contoso.com**.
+
+1. Select **+ Record set**.
+
+1. On the **Basics** tab of Create record set, enter the information as listed in the table below:
+
+    | Property | Value    |
+    |:---------|:---------|
+    |Name|**backend**|
+    |Type|**A**|
+    |TTL|**1**|
+    |IP address|**10.1.1.4**|
+
+
+1. Select **OK**
 
 1. Verify that **contoso.com** has a record set named **backend**
