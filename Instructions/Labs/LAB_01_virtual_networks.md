@@ -27,6 +27,7 @@ The IT department needs network isolation and segmentation for the web applicati
 
 >**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 > In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
+
 ### Create Virtual Networks and subnets
 
 1. Login to the Windows 11 desktop using the credentials provided on the lab **Resource** page at the top of these instructions.
@@ -66,11 +67,11 @@ The IT department needs network isolation and segmentation for the web applicati
 
 ### Setup a peer relationship between the virtual networks
 
-1.Setting up a peer relationship between the two virtual networks will allow traffic to flow in both directions between the **app-vnet** and **shared-services-vnet** virtual networks.
+1. Setting up a peer relationship between the two virtual networks will allow traffic to flow in both directions between the **app-vnet** and **shared-services-vnet** virtual networks.
 1. In the Portal in the RG1 resource group view. Click on the **"app-vnet"** virtual network.
 1. On the **app-vnet** context menu on the left hand side of the portal scroll down and click on **peerings**
 1. In the **app-vnet** peerings pane, click **+ Add**.
-1- fill out the form using the values in the following table: 
+1. fill out the form using the values in the following table: 
 
     | Property | Value    | 
     |:---------|:---------|
