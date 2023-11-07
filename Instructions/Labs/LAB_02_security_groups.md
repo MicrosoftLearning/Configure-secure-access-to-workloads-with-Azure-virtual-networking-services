@@ -27,7 +27,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 An application security group (ASGs) enables you to group together servers with similar functions, such as web servers.
 
-1- In the search box at the top of the portal, enter **Application security group**. Select Application security groups in the search results.
+1. In the search box at the top of the portal, enter **Application security group**. Select Application security groups in the search results.
 
 1. Select **+ Create**.
 
@@ -109,11 +109,11 @@ A network security group (NSG) secures network traffic in your virtual network.
 
 ### Deploy an ARM template using Cloud Shell to create the VMs needed for this exercise
 
-1. In the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+1. In the Azure portal, open the **Azure Cloud Shell** by selecting the icon in the top right of the Azure Portal.
 
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**.
+    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**.
 
 1. Deploy the following ARM template using Cloud Shell to create the VMs needed for this exercise:
 
