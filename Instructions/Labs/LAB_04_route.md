@@ -36,7 +36,7 @@ Now that a firewall is in place with policies that enforce your organizations se
 
         1. Record the **Private IP address**.
 
-    1. In the Overview pane click on **fwpip**
+    1. In the Overview pane select on **fwpip**
 
     1. Record the **Public IP address**. 
 
