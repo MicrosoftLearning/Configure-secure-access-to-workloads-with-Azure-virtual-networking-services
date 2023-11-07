@@ -81,7 +81,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
 1. Select **Application rules**.
 
-1. click on **"+ Application rule collection"**.
+1. Se;ect on **"+ Application rule collection"**.
 
 1. Use the values in the following table. For any property that is not specified, use the default value.
 
@@ -112,7 +112,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
 1. Select **Network rules**.
 
-1. click on **"+ Network rule collection"**.
+1. Select on **"+ Network rule collection"**.
 
 1. Use the values in the following table. For any property that is not specified, use the default value.
 
