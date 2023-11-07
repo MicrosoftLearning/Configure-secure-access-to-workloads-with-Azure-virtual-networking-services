@@ -118,16 +118,36 @@ A network security group (NSG) secures network traffic in your virtual network.
 
 1. Deploy the following ARM template using Cloud Shell to create the VMs needed for this exercise:
 
+>**Note**: you can select the text in the section below and copy/paste it in the Cloud Shell.
+
    ```powershell
    $RGName = "RG1"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateUri https://raw.githubusercontent.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/main/Instructions/Labs/azuredeploy.json
    ```
   
-1. Verify that both the **VM1** and **VM2** virtual machines are running.
+1. to Verify that both the **VM1** and **VM2** virtual machines are running, navigate to the **RG1** resource group and select **VM1**.
 
-1. Associate the **app-backend-asg** application security group to the **VM2-nic** network interface that is attached to **VM2**. [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
+1, Validate that the status of the virtual machine is **Running**.
+
+1. Repeat the previous step for **VM2**.
+
+### Associate the application security group to the network interface of the VM
+When you created the VMs, Azure created a network interface for each VM, and attached it to the VM.
+
+Add the network interface of each VM to one of the application security groups you created previously.
+
+1. In the Azure portal, navigate to the **RG1** resource group and select **VM2**.
+
+1. Select **Networking** from the Settings section of **VM2**.
+
+1. Select **Applicatioon security groups** from the Settings section of **VM2-nic**.
+
+1. Click **configure the application security groups**
+
+1. Select **app-backend-asg** and click **Save**.
+
+  [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
 
 1. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
 
-1. Verify that you have configured the **AllowSSH** incoming security rule to use **app-backend-asg** as the destination.
