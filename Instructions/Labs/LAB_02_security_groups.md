@@ -67,7 +67,6 @@ A network security group (NSG) secures network traffic in your virtual network. 
 
 1. Select **Review + create** and then select **Create**.
 
-
 In this section, you associate the network security group with the subnet of the virtual network you created earlier.
 
 1. In the search box at the top of the portal, enter **Network security group**. Select Network security groups in the search results.
@@ -139,15 +138,11 @@ Add the network interface of each VM to one of the application security groups y
 
 1. In the Azure portal, navigate to the **RG1** resource group and select **VM2**.
 
-1. Select **Networking** from the Settings section of **VM2**.
+1. Select **+ Add application security groups** from the **Application security groups** section of **VM2**.
 
-1. Select **Applicatioon security groups** from the Settings section of **VM2-nic**.
+1. Select **app-backend-asg** from the list of application security groups.
 
-1. Click **configure the application security groups**
-
-1. Select **app-backend-asg** and click **Save**.
+1. Select **Add**.
 
   [Learn more about adding a NIC to an application security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#add-or-remove-from-application-security-groups).
-
-1. Verify that you have associated the application security group to the **VM2-nic** that is attached to **VM2**.
 

@@ -30,7 +30,7 @@ The IT department needs network isolation and segmentation for the web applicati
 ### Create Virtual Networks and subnets
 
 1. Login to the Windows 11 desktop using the credentials provided on the lab **Resource** page at the top of these instructions.
-1. Open the **Edge** berowser from the desktop and navigate to <a href="https://portal.azure.com/#home">Home - Microsoft Azure</a> and login using the credentials provided on the lab **Resource** page at the top of these instructions.
+1. Open the **Edge** browser from the desktop and navigate to <a href="https://portal.azure.com/#home">Home - Microsoft Azure</a> and login using the credentials provided on the lab **Resource** page at the top of these instructions.
 1. If you get a notification that tells you that it will **"Let's show you around before you get started"** click **"Maybe later"**.
 1. To create a Virtual Network, in the search bar at the top of the portal type **"Virtual Networks"** and select **"Virtual Networks"** from the results.
 1. in the **"Virtual Networks"** portal pane, click ""**+ Create**".
