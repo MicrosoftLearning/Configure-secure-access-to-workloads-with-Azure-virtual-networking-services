@@ -25,7 +25,7 @@ The IT department needs network isolation and segmentation for the web applicati
 ## Exercise instructions
 
 
->**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+>**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/) with **Contributor** RBAC role assigned.
 > In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
 
 ### Create Virtual Networks and subnets
