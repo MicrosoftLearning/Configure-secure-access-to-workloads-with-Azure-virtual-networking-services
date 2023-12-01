@@ -30,12 +30,12 @@ The IT department needs network isolation and segmentation for the web applicati
 
 ### Create Virtual Networks and subnets
 
-1. Login to the Windows 11 desktop using the credentials provided on the lab **Resource** page at the top of these instructions.
-1. Open the **Edge** browser from the desktop and navigate to <a href="https://portal.azure.com/#home">Home - Microsoft Azure</a> and login using the credentials provided on the lab **Resource** page at the top of these instructions.
-1. If you get a notification that tells you that it will **"Let's show you around before you get started"** select **"Maybe later"**.
+Begin by creating the networks shown in the diagram above. 
+
+1. Open a browser and navigate to the <a href="https://portal.azure.com/#home">Azure portal</a> and login.
 1. To create a Virtual Network, in the search bar at the top of the portal type **"Virtual Networks"** and select **"Virtual Networks"** from the results.
-1. in the **"Virtual Networks"** portal pane, select ""**+ Create**".
-1. fill out all the tabs of the creation process by using the values in the following table:
+1. In the **"Virtual Networks"** portal pane, select ""**+ Create**".
+1. Fill out all the tabs of the creation process by using the values in the following table:
 
 
     | Property | Value    |
@@ -71,7 +71,7 @@ The IT department needs network isolation and segmentation for the web applicati
 1. In the Portal in the RG1 resource group view. Select on the **"app-vnet"** virtual network.
 1. On the **app-vnet** context menu on the left hand side of the portal scroll down and select on **peerings**
 1. In the **app-vnet** peerings pane, Select **+ Add**.
-1. fill out the form using the values in the following table: 
+1. Fill out the form using the values in the following table: 
 
     | Property | Value    | 
     |:---------|:---------|
