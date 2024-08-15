@@ -55,7 +55,7 @@ Begin by creating the virtual networks shown in the diagram above.
     | Region               | **East US**              |
     | IPv4 address space   | **10.0.0.0/16**          |
     | Subnet name          | **AzureFirewallSubnet**  |
-    | Subnet address range | **10.0.0.0/24**          |
+    | Subnet address range | **10.0.0.0/26**          |
 
 1. Once the deployment is complete. Navigate back to the portal, in the search bar type **"resource groups"** and select **Resource Groups"** from the results. Select on **"RG1"** in the main pane and comfirm both virtual networks have been deployed.
 
