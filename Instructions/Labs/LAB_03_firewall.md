@@ -42,7 +42,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     | Property      | Value                   |
     | :------------ | :---------------------- |
     | Name          | **AzureFirewallSubnet** |
-    | Address range | **10.1.63.0/24**        |
+    | Address range | **10.1.63.0/26**        |
 
     > **Note**: Leave all other settings as default.
 
