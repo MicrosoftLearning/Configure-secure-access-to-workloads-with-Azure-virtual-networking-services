@@ -27,17 +27,15 @@ Your organization requires control of the network traffic to and from the web ap
 
 An application security group (ASGs) enables you to group together servers with similar functions, such as web servers.
 
-1. In the search box at the top of the portal, enter **Application security group**. Select Application security groups in the search results.
-
-1. Select **+ Create**.
-
-    On the **Basics** tab of Create an application security group, enter the information as listed in the table below:
+1. In the portal, search for and select `Application security groups`.
+   
+1. Select **+ Create** and configure the application security group. 
 
     | Property       | Value                        |
     | :------------- | :--------------------------- |
     | Subscription   | **Select your subscription** |
     | Resource group | **RG1**                      |
-    | Name           | **app-backend-asg**          |
+    | Name           | `app-backend-asg`          |
     | Region         | **East US**                  |
 
 1. Select **Review + create** and then select **Create**.
@@ -50,34 +48,30 @@ An application security group (ASGs) enables you to group together servers with 
 
 A network security group (NSG) secures network traffic in your virtual network. NSGs contain a list of security rules that allow or deny network traffic to resources connected to Azure Virtual Networks (VNet). NSGs can be associated with subnets and/or individual network interfaces attached to Azure Virtual Machines (VM).
 
-1. In the search box at the top of the portal, enter **Network security group**. Select **Network security groups** in the search results.
+1. In the portal search for and select `Network security group`.
 
-1. Select **+ Create**.
-
-    On the **Basics** tab of Create network security group, enter the information as listed in the table below:
+1. Select **+ Create** and configure the network security group. 
 
     | Property       | Value                        |
     | :------------- | :--------------------------- |
     | Subscription   | **Select your subscription** |
     | Resource group | **RG1**                      |
-    | Name           | **app-vnet-nsg**             |
+    | Name           | `app-vnet-nsg`            |
     | Region         | **East US**                  |
 
     [Learn more about creating a network security group](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-a-network-security-group).
 
 1. Select **Review + create** and then select **Create**.
 
-In this section, you associate the network security group with the subnet of the virtual network you created earlier.
+**Associate the NSG with the app-vnet backend.**
 
-1. In the search box at the top of the portal, enter **Network security group**. Select Network security groups in the search results.
+1. Select **Go to resource** or navigate to the **app-vnet-nsg** resource.
 
-1. Select **app-vnet-nsg** from the list of network security groups.
+1. In the **Settings** blade select **Subnets**.
 
-1. Select **Subnets** from the Settings section of **app-vnet-nsg**.
+1. Select **+ Associate**
 
-1. In the Subnets page, select **+ Associate**
-
-1. Under **Associate subnet**, select **app-vnet (RG1)** for Virtual network. and select **Backend** for Subnet, and then select OK.
+1. Select **app-vnet (RG1)** and then the **Backend** subnet. Select **OK**.
 
     [Learn more about associating a network security group to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#associate-a-network-security-group-to-a-subnet).
 
