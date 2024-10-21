@@ -42,9 +42,9 @@ Begin by creating the virtual networks shown in the diagram above.
     | Virtual network name | `app-vnet`    |
     | Region               | **East US**     |
     | IPv4 address space   | **10.1.0.0/16** |
-    | Subnet name          | **frontend**    |
+    | Subnet name          | `frontend`    |
     | Subnet address range | **10.1.0.0/24** |
-    | Subnet name          | **backend**     |
+    | Subnet name          | `backend`     |
     | Subnet address range | **10.1.1.0/24** |
 
     **Note**: Leave all other settings as their defaults. When finished select **"Review + create** and then **Create**.
@@ -72,9 +72,9 @@ Begin by creating the virtual networks shown in the diagram above.
 
     | Property                                 | Value                          |
     | :--------------------------------------- | :----------------------------- |
-    | Peering link name              | **app-vnet-to-hub** |
-    | Virtual network    | **hub-vnet** |
-    | Remote virtual network Peering link name | **hub-to-app-vnet** |
+    | Peering link name              | `app-vnet-to-hub` |
+    | Virtual network    | `hub-vnet` |
+    | Local virtual network peering link name | `hub-to-app-vnet` |
 
     **Note**: Leave all other settings as their defaults. Select **"Add"** to create the virtual network peering.
 
