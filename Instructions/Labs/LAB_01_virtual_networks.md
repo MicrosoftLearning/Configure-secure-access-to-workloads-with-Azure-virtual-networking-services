@@ -72,7 +72,7 @@ Begin by creating the virtual networks shown in the diagram above.
 
     | Property                                 | Value                          |
     | :--------------------------------------- | :----------------------------- |
-    | Peering link name              | `app-vnet-to-hub` |
+    | Remote peering link name              | `app-vnet-to-hub` |
     | Virtual network    | `hub-vnet` |
     | Local virtual network peering link name | `hub-to-app-vnet` |
 
