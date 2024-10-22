@@ -80,4 +80,4 @@ Begin by creating the virtual networks shown in the diagram above.
 
     [Learn more about Virtual Network Peering](https://learn.microsoft.com/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal)
 
-1. Once the deploymnet completes, verify the **Peering status** is **Connected**. 
+1. Once the deployment completes, verify the **Peering status** is **Connected**. 
