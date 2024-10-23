@@ -28,7 +28,7 @@ You have been tasked with applying [Zero Trust principles](https://learn.microso
 
 ### Create hub and spoke virtual networks and subnets
 
-Begin by creating the virtual networks shown in the diagram above.
+An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/virtual-networks-overview) enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. All Azure resources in a virtual network are deployed into ]subnets](https://learn.microsoft.com/azure/virtual-network/virtual-network-manage-subnet?tabs=azure-portal) within the virtual network. 
 
 1. Sign in to the **Azure portal** - `https://portal.azure.com`.
    
@@ -64,6 +64,8 @@ Begin by creating the virtual networks shown in the diagram above.
 
 ### Configure a peer relationship between the virtual networks
 
+[Virtual network peering](https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview) enables you to seamlessly connect two or more Virtual Networks in Azure. 
+
 1. Search for and select the `app-vnet` virtual network.
    
 1. In the **Settings** blade, select **Peerings**.
@@ -77,7 +79,5 @@ Begin by creating the virtual networks shown in the diagram above.
     | Local virtual network peering link name | `hub-to-app-vnet` |
 
     **Note**: Leave all other settings as their defaults. Select **"Add"** to create the virtual network peering.
-
-    [Learn more about Virtual Network Peering](https://learn.microsoft.com/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal)
 
 1. Once the deployment completes, verify the **Peering status** is **Connected**. 
