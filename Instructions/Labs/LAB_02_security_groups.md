@@ -122,10 +122,8 @@ When you created the VMs, Azure created a network interface for each VM, and att
 
 Add the application security group you created previously to the network interface of VM2.
 
-1. In the Azure portal, navigate to the **RG1** resource group and select **VM2**.
+1. In the Azure portal, search for and select `VM2`.
 
-1. Navigate to the networking tab of the VM, select **+ Add application security groups** from the **Application security groups** section.
+1. In the **Networking** blade, select **Application security groups** and then select **Add application security groups**.
 
-1. Select **app-backend-asg** from the list of application security groups.
-
-1. Select **Add**.
+1. Select the **app-backend-asg** and then select **Add**.
