@@ -87,7 +87,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
     | Property               | Value                                     |
     | :--------------------- | :---------------------------------------- |
-    | Name                   | `pp-vnet-fw-rule-collection`         |
+    | Name                   | `app-vnet-fw-rule-collection`         |
     | Rule collection type   | **Application**                           |
     | Priority               | `200`                                   |
     | Rule collection action | **Allow**                                 |
