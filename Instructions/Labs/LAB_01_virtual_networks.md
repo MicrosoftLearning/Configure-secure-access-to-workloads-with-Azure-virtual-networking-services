@@ -60,7 +60,9 @@ An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/vir
     | Subnet name          | **AzureFirewallSubnet**  |
     | Subnet address range | **10.0.0.0/26**          |
 
-1. Once the deployments are complete, search for and select your **resource group**. Confirm your new virtual networks are part of the resource group. 
+1. Once the deployments are complete, search for and select your 'virtual networks`.
+
+1. Verify your virtual networks and subnets were deployed. 
 
 ### Configure a peer relationship between the virtual networks
 
