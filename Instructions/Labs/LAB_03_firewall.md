@@ -75,79 +75,57 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
 ### Update the Firewall Policy
 
-1. In the search box at the top of the portal, enter **Firewall Policy**. Select **Firewall Policies** in the search results.
+1. In the portal, search for and select `Firewall Policies`. 
 
 1. Select **fw-policy**.
 
-1. Select **Application rules**.
+### Add an application rule
 
-1. Se;ect on **"+ Application rule collection"**.
+1. In the **Settings** blade, select **Application rules** and then **Add a rule collection**.
 
-1. Use the values in the following table. For any property that is not specified, use the default value.
+1. Configure the application rule collection and then select **Add**. 
 
     | Property               | Value                                     |
     | :--------------------- | :---------------------------------------- |
-    | Name                   | **app-vnet-fw-rule-collection**           |
+    | Name                   | `pp-vnet-fw-rule-collection`         |
     | Rule collection type   | **Application**                           |
-    | Priority               | **200**                                   |
+    | Priority               | `200`                                   |
     | Rule collection action | **Allow**                                 |
     | Rule collection group  | **DefaultApplicationRuleCollectionGroup** |
+    | Name             | `AllowAzurePipelines`                |
+    | Source type      | **IP address**                         |
+    | Source           | `10.1.0.0/23`                       |
+    | Protocol         | `https`                             |
+    | Destination type | **FQDN**                                  |
+    | Destination      | `dev.azure.com, azure.microsoft.com` |
 
-    1. Under **rules** use the values in the following table
+>**Note**: The **AllowAzurePipelines** rule allows the web application to access Azure Pipelines. The rule allows the web application to access the Azure DevOps service and the Azure website.
 
-        | Property         | Value                                  |
-        | :--------------- | :------------------------------------- |
-        | Name             | **AllowAzurePipelines**                |
-        | Source type      | **IP address**                         |
-        | Source           | **10.1.0.0/23**                        |
-        | Protocol         | **https**                              |
-        | Destination type | FQDN                                   |
-        | Destination      | **dev.azure.com, azure.microsoft.com** |
+### Add a network rule
 
-        and select **Add**
+1. In the **Settings** blade, select **Network rules** and then **Add a network collection**.
 
-> **Note**: The **AllowAzurePipelines** rule allows the web application to access Azure Pipelines. The rule allows the web application to access the Azure DevOps service and the Azure website.
-
-1. Create a **network rule collection** that contains a single IP Address rule by using the values in the following table. For any property that is not specified, use the default value.
-
-1. Select **Network rules**.
-
-1. Select on **"+ Network rule collection"**.
-
-1. Use the values in the following table. For any property that is not specified, use the default value.
+1. Configure the network rule and then select **Add**.  
 
     | Property               | Value                                 |
     | :--------------------- | :------------------------------------ |
-    | Name                   | **app-vnet-fw-nrc-dns**               |
+    | Name                   | `app-vnet-fw-nrc-dns`               |
     | Rule collection type   | **Network**                           |
-    | Priority               | **200**                               |
+    | Priority               | `200`                        |
     | Rule collection action | **Allow**                             |
     | Rule collection group  | **DefaultNetworkRuleCollectionGroup** |
+    | Rule                  | **AllowDns**         |
+    | Source                | `10.1.0.0/23`      |
+    | Protocol              | **UDP**              |
+    | Destination ports     | `53`               |
+    | Destination addresses | **1.1.1.1, 1.0.0.1** |
 
-    1. Under **rules** use the values in the following table
+### Verify the firewall and firewall policy status
 
-        | Property              | Value                |
-        | :-------------------- | :------------------- |
-        | Rule                  | **AllowDns**         |
-        | Source                | **10.1.0.0/23**      |
-        | Protocol              | **UDP**              |
-        | Destination ports     | **53**               |
-        | Destination addresses | **1.1.1.1, 1.0.0.1** |
+1. In the portal search for and select **Firewall**. 
 
-        And select **Add**.
+1. View the **app-vnet-firewall** and ensure the **Provisioning state** is **Succeeded**. This may take a few minutes. 
 
-    Learn more on [creating an application rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule) and [creating a network rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-a-network-rule).
+1. In the portal serach for and select **Firewall policies**.
 
-1. To verify that the Azure Firewall and Firewall Policy provisioning state show **Succeeded**.
-
-1.In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
-
-1. Select **app-vnet-firewall**.
-
-1- Validate that the **Provisioning state** is **Succeeded**.
-
-1- In the search box at the top of the portal, enter **Firewall policies**. Select **Firewall policies** in the search results
-
-1. Select **fw-policy**.
-
-1- Validate that the **Provisioning state** is **Succeeded**.
+1. View the **fw-policy** and ensure the **Provisioning state** is **Succeeded**. This may take a few minutes. 
