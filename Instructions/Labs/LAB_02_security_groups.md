@@ -14,6 +14,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 ![Diagram that shows one ASG and NSG associated to a virtual network.](../Media/task-2.png)
 
+
 ### Skilling tasks
 
 - Create an NSG.
@@ -22,6 +23,8 @@ Your organization requires control of the network traffic to and from the web ap
 - Create and use Application Security Groups in NSG rules.
 
 ## Exercise instructions
+
+>**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
 
 ### Create Application Security Group
 
