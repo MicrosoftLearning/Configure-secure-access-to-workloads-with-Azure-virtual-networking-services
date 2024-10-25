@@ -24,7 +24,7 @@ Your organization requires workloads to record and resolve domain names internal
 
 ### Create a private DNS zone
 
-Azure Private DNS provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names available today.
+[Azure Private DNS](https://learn.microsoft.com/azure/dns/private-dns-overview) provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names.
 
 1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
 
@@ -42,6 +42,8 @@ Azure Private DNS provides a reliable, secure DNS service to manage and resolve 
 1. Select **Review + create** and then select **Create**.
 
 ### Create a virtual network link to your private DNS zone
+
+To resolve DNS records in a private DNS zone, resources must typically be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) that associates the virtual network to the private zone.
 
 1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
 
@@ -62,6 +64,8 @@ Azure Private DNS provides a reliable, secure DNS service to manage and resolve 
 1. Select **OK**
 
 ### Create a DNS record set
+
+[DNS records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records#dns-records) provide information about the DNS zone. 
 
 1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
 
