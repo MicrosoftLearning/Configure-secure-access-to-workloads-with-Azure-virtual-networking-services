@@ -23,6 +23,8 @@ Now that a firewall is in place with policies that enforce your organizations se
 
 ### Create a route table
 
+Azure automatically creates a [route table](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview) for each subnet within an Azure virtual network. The route table includes the default [system  routes](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#system-routes). You can create route tables and routes to override Azure's default system routes.
+
 1. Record the private and public IP address of **app-vnet-firewall**.
 
     1. In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
@@ -51,8 +53,6 @@ Now that a firewall is in place with policies that enforce your organizations se
     | Name           | **app-vnet-firewall-rt**     |
 
 1. Select **Review + create** and then select **Create**.
-
-    [Learn more on creating route tables](https://docs.microsoft.com/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
 
 ### Associate the route table to the subnets
 
@@ -97,6 +97,4 @@ Now that a firewall is in place with policies that enforce your organizations se
 
 1. Select **Add**.
 
-[Learn more on creating routes](https://docs.microsoft.com/azure/virtual-network/manage-route-table#add-a-route).
 
-Now the outbound traffic from the front end and backend subnet will route to the firewall.
