@@ -43,7 +43,7 @@ Your organization requires workloads to record and resolve domain names internal
 
 ### Create a virtual network link to your private DNS zone
 
-To resolve DNS records in a private DNS zone, resources must typically be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) that associates the virtual network to the private zone.
+To resolve DNS records in a private DNS zone, resources must typically be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) associates the virtual network to the private zone.
 
 1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
 
