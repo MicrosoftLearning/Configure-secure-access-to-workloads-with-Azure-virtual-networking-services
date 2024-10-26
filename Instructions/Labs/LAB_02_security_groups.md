@@ -78,7 +78,7 @@ NSGs can be associated with subnets and/or individual network interfaces attache
 
 An NSG use [security rules](https://learn.microsoft.com/azure/virtual-network/network-security-group-how-it-works) to filter inbound and outbound network traffic. 
 
-1. In the search box at the top of the portal, enter **Network security group**. Select Network security groups in the search results.
+1. In the search box at the top of the portal, enter **Network security groups**. Select Network security groups in the search results.
 
 1. Select **app-vnet-nsg** from the list of network security groups.
 
