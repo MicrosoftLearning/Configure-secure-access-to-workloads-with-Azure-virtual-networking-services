@@ -84,4 +84,18 @@ To resolve DNS records in a private DNS zone, resources must typically be linked
 
 1. Select **OK**
 
-1. Verify that **contoso.com** has a record set named **backend**
+1. Verify that **contoso.com** has a record set named **backend**.
+
+### Learn more with online training
+
++ [Introduction to Azure DNS](https://learn.microsoft.com/training/modules/intro-to-azure-dns/). This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
++ [Host your domain on Azure DNS](https://learn.microsoft.com/training/modules/host-domain-azure-dns/). In this module, you learn how to create a DNS zone and DNS records.
+
+### Key takeaways
+
+Congratulations on completing the exercise. Here are the main takeaways:
+
++ Azure DNS is a cloud service that allows you to host and manage domain name system (DNS) domains, also known as DNS zones. 
++ Azure DNS public zones host domain name zone data for records that you intend to be resolved by any host on the internet.
++ Azure Private DNS zones allow you to configure a private DNS zone namespace for private Azure resources.
++ A DNS zone is a collection of DNS records. DNS records provide information about the domain.
