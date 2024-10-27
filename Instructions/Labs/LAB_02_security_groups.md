@@ -124,7 +124,20 @@ An NSG use [security rules](https://learn.microsoft.com/azure/virtual-network/ne
     | Name                                   | **AllowSSH**                   |
 
 
+### Learn more with online training
 
++ [Filter network traffic with a network security group using the Azure portal](https://learn.microsoft.com/training/modules/filter-network-traffic-network-security-group-using-azure-portal/). In this module, you focus on filtering network traffic using Network Security Groups (NSGs) in the Azure portal. Learn how to create, configure, and apply NSGs for improved network security.
++ [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://learn.microsoft.com/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). In this module, you learn about network security groups and how to restrict network connectivity. 
+
+### Key takeaways
+
+Congratulations on completing the exercise. Here are the main takeaways:
+
++ Application security groups let you organize virtual machines and define network security policies based on your organization's applications.
++ An Azure network security group is used to filter network traffic between Azure resources in an Azure virtual network.
++ You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. 
++ A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, Azure resources.
++ You join virtual machines to an application security group. Then you use the application security group as a source or destination in the network security group rules.
 
 
 
