@@ -97,4 +97,15 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
 
 1. Select **Add**.
 
+### Learn more with online training
 
++ [Manage and control traffic flow in your Azure deployment with routes](https://learn.microsoft.com/training/modules/control-network-traffic-flow-with-routes/). In this module, you learn how to control Azure virtual network traffic by implementing custom routes. This module has two sandboxes. 
+
+### Key takeaways
+
+Congratulations on completing the exercise. Here are the main takeaways:
+
++ Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. System routes control this routing.
++ User-defined routes override the default system routes so traffic can be routed through a network virtual appliances (NVAs). 
++ Network virtual appliances (NVAs) control the flow of network traffic. Examples of NVAs are firewalls, load balancers, and routers.
++ Route tables contain routing information and are associated with a subnet. 
