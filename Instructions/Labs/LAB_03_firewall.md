@@ -128,4 +128,18 @@ Azure Firewall policy is a top-level resource that contains security and operati
 
 1. In the portal serach for and select **Firewall policies**.
 
-1. View the **fw-policy** and ensure the **Provisioning state** is **Succeeded**. This may take a few minutes. 
+1. View the **fw-policy** and ensure the **Provisioning state** is **Succeeded**. This may take a few minutes.
+
+### Learn more with online training
+
++ [Introduction to Azure Firewall](https://learn.microsoft.com/training/modules/introduction-azure-firewall/). In this module, you learn about how Azure Firewall features, rules, deployment options, and administration.
++ [Introduction to Azure Firewall Manager](https://learn.microsoft.com/training/modules/intro-to-azure-firewall-manager/). In this moudle, you learn how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
+
+### Key takeaways
+
+Congratulations on completing the exercise. Here are the main takeaways:
+
++ Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats.
++ An Azure firewall policy is a resource that contains one or more collections of NAT, network, and application rules.
++ Network rules allow or deny traffic based on IP addresses, ports, and protocols.
++ Application rules allow or deny traffic based on fully qualified domain names (FQDNs), URLs, and HTTP/HTTPS protocols.
