@@ -82,4 +82,21 @@ An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/vir
 
     **Note**: Leave all other settings as their defaults. Select **"Add"** to create the virtual network peering.
 
-1. Once the deployment completes, verify the **Peering status** is **Connected**. 
+1. Once the deployment completes, verify the **Peering status** is **Connected**.
+
+## Learn more with online training
+
++ [Introduction to Azure Virtual Networks](https://learn.microsoft.com/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
+
+
+
+
+## Key takeaways
+
+Congratulations on completing the exercise. Here are the main takeaways:
+
++ Azure virtual networks (VNets) provide a secure and isolated network environment for your cloud resources. You can create multiple virtual networks per region per subscription.
++ When designing virtual networks make sure the VNet address space (CIDR block) doesn't overlap with your organization's other network ranges.
++ A subnet is a range of IP addresses in the VNet. You can segment VNets into different size subnets, creating as many subnets as you require for organization and security within the subscription limit. Each subnet must have a unique address range.
++ Certain Azure services, such as Azure Firewall, require their own subnet.
++ Virtual network peering enables you to seamlessly connect two Azure virtual networks. The virtual networks appear as one for connectivity purposes.
