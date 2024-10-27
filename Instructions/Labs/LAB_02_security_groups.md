@@ -24,7 +24,25 @@ Your organization requires control of the network traffic to and from the web ap
 
 ## Exercise instructions
 
+### Create the network infrastructure for the exercise
+
 >**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+
+1. Use the icon (top right) to launch a **Cloud Shell** session. Alternately, navigate directly to `https://shell.azure.com`.
+
+1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
+
+1. Storage is not required for this task Select your subscription. 
+
+1. Deploy the virtual machines required for this exercise. 
+
+   ```powershell
+   $RGName = "RG1"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateUri https://raw.githubusercontent.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/main/Instructions/Labs/azuredeploy.json
+   ```
+  
+1. In the portal search for and select `virtual machines`. Verify both vm1 and vm2 are **Running**.
 
 ### Create Application Security Group
 
@@ -45,6 +63,14 @@ Your organization requires control of the network traffic to and from the web ap
 
 >**Note**: You are creating the application security group in the same region as the existing virtual network.
 
+**Associate the application security group to the network interface of the VM**
+
+1. In the Azure portal, search for and select `VM2`.
+
+1. In the **Networking** blade, select **Application security groups** and then select **Add application security groups**.
+
+1. Select the **app-backend-asg** and then select **Add**.
+   
 ### Create and Associate the Network Security Group
 
 [Network security groups (NSGs)](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview) secure network traffic in a virtual network. 
@@ -97,36 +123,8 @@ An NSG use [security rules](https://learn.microsoft.com/azure/virtual-network/ne
     | Priority                               | **100**                        |
     | Name                                   | **AllowSSH**                   |
 
-### Deploy an ARM template using Cloud Shell to create the VMs needed for this exercise
 
-1. In the Azure portal, open the **Azure Cloud Shell** by selecting the icon in the top right of the Azure Portal.
 
-1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**.
 
-1. Deploy the following ARM template using Cloud Shell to create the VMs needed for this exercise:
 
->**Note**: you can select the text in the section below and copy/paste it in the Cloud Shell.
-
-   ```powershell
-   $RGName = "RG1"
-   
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateUri https://raw.githubusercontent.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/main/Instructions/Labs/azuredeploy.json
-   ```
-  
-1. In the portal search for and select `virtual machines`. 
-
-1. Verify both vm1 and vm2 are **Running**.
-
-### Associate the application security group to the network interface of the VM
-
-When you created the VMs, Azure created a network interface for each VM, and attached it to the VM.
-
-Add the application security group you created previously to the network interface of VM2.
-
-1. In the Azure portal, search for and select `VM2`.
-
-1. In the **Networking** blade, select **Application security groups** and then select **Add application security groups**.
-
-1. Select the **app-backend-asg** and then select **Add**.
