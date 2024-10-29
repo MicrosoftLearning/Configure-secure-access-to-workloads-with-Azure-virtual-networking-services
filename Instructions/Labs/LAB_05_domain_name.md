@@ -22,69 +22,63 @@ Your organization requires workloads to record and resolve domain names internal
 
 ## Exercise instructions
 
+>**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+
 ### Create a private DNS zone
 
 [Azure Private DNS](https://learn.microsoft.com/azure/dns/private-dns-overview) provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names.
 
-1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
+1. On the Azure portal, search for and select `Private dns zones`.
 
-1. Select **+ Create**.
-
-1. On the **Basics** tab of Create private DNS zone, enter the information as listed in the table below:
+1. Select **+ Create** and configure the DNS zone. 
 
     | Property       | Value                        |
     | :------------- | :--------------------------- |
     | Subscription   | **Select your subscription** |
     | Resource group | **RG1**                      |
-    | Name           | **contoso.com**              |
+    | Name           | `private.contoso.com`              |
     | Region         | **East US**                  |
 
 1. Select **Review + create** and then select **Create**.
 
+1. Wait for the DNS zone to deploy, and then select **Go to resource**. 
+
 ### Create a virtual network link to your private DNS zone
 
-To resolve DNS records in a private DNS zone, resources must typically be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) associates the virtual network to the private zone.
+To resolve DNS records in a private DNS zone, resources must  be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) associates the virtual network to the private zone.
 
-1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
+1. In the portal, continue working on the **private.contoso.com** DNS zone. 
 
-1. Select **contoso.com**.
+1. In the **DNS Management** blade, select **+ Virtual network links**.
 
-1. Select **+ Virtual network link**.
-
-1. Select **+ Add"**
-
-1. On the **Basics** tab of Create virtual network link, enter the information as listed in the table below:
+1. Select **+ Add"** and configure the virtual network link. 
 
     | Property                 | Value             |
     | :----------------------- | :---------------- |
-    | Link name                | **app-vnet-link** |
+    | Link name                | `app-vnet-link` |
     | Virtual network          | **app-vnet**      |
     | Enable auto registration | **Enabled**       |
 
-1. Select **OK**
+1. Select **Create**
 
 ### Create a DNS record set
 
 [DNS records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records#dns-records) provide information about the DNS zone. 
 
-1. On the portal search bar, type **Private dns zones** in the search text box and select Private DNS zones from the results.
+1. In the portal, continue working on the **private.contoso.com** DNS zone. 
 
-1. Select **contoso.com**.
+1. In the **DNS Management** blade, select **+ Recordsets**.
 
-1. Select **+ Record set**.
-
-1. On the **Basics** tab of Create record set, enter the information as listed in the table below:
-
+1. Select **+ Add"** and configure the record set.
+   
     | Property   | Value        |
     | :--------- | :----------- |
-    | Name       | **backend**  |
+    | Name       | `backend` |
     | Type       | **A**        |
     | TTL        | **1**        |
     | IP address | **10.1.1.4** |
 
-1. Select **OK**
-
-1. Verify that **contoso.com** has a record set named **backend**.
+1. Select **Add**
 
 ### Learn more with online training
 
