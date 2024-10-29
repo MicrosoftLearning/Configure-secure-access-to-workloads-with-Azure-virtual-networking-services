@@ -80,7 +80,7 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
     | TTL        | **1**        |
     | IP address | **10.1.1.4** |
 
-1. Select **Add**
+4. Select **Add**
 
 ### Learn more with online training
 
