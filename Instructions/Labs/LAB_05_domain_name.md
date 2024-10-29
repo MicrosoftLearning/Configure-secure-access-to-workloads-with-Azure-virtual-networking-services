@@ -69,7 +69,9 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
 
 1. In the **DNS Management** blade, select **+ Recordsets**.
 
-1. Select **+ Add"** and configure the record set.
+1. Select **+ Add"** and configure a record set.
+
+>**Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of **10.1.1.4**.  
    
     | Property   | Value        |
     | :--------- | :----------- |
