@@ -25,19 +25,17 @@ Now that a firewall is in place with policies that enforce your organizations se
 
 Azure automatically creates a [route table](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview) for each subnet within an Azure virtual network. The route table includes the default [system  routes](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#system-routes). You can create route tables and routes to override Azure's default system routes.
 
-1. Record the private and public IP address of **app-vnet-firewall**.
+**Record the private and public IP address of app-vnet-firewall**
 
-    1. In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
+1. In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
 
-    1. Select **app-vnet-firewall**.
+1. Select **app-vnet-firewall**.
 
-    1. Select **Overview**.
+1. Select **Overview** and record the **Private IP address**.
 
-        1. Record the **Private IP address**.
+1. In the Overview pane select on **fwpip** and record the **Public IP address**.
 
-    1. In the Overview pane select on **fwpip**
-
-    1. Record the **Public IP address**.
+**Add the route table**
 
 1. In the search box, enter **Route tables**. When Route table appears in the search results, select it.
 
