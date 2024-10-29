@@ -25,7 +25,7 @@ Now that a firewall is in place with policies that enforce your organizations se
 
 Azure automatically creates a [route table](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview) for each subnet within an Azure virtual network. The route table includes the default [system  routes](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#system-routes). You can create route tables and routes to override Azure's default system routes.
 
-**Record the private and public IP address of app-vnet-firewall**
+**Record the private IP address of app-vnet-firewall**
 
 1. In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
 
@@ -33,57 +33,50 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
 
 1. Select **Overview** and record the **Private IP address**.
 
-1. In the Overview pane select on **fwpip** and record the **Public IP address**.
-
 **Add the route table**
 
 1. In the search box, enter **Route tables**. When Route table appears in the search results, select it.
 
-1. In the Route table page, select **+ Create**.
-
-1. On the **Basics** tab of Create Route table, enter the information as listed in the table below:
+1. In the Route table page, select **+ Create** and create the route table. 
 
     | Property       | Value                        |
     | :------------- | :--------------------------- |
     | Subscription   | **Select your subscription** |
     | Resource group | **RG1**                      |
     | Region         | **East US**                  |
-    | Name           | **app-vnet-firewall-rt**     |
+    | Name           | `app-vnet-firewall-rt`     |
 
 1. Select **Review + create** and then select **Create**.
 
+1. Wait for the route table to deploy, then select **Go to resource**.  
+
 ### Associate the route table to the subnets
 
-1. In the search box, enter **Route tables**. and select Route Tables from the search results.
+1. In the portal, continue working with the route table, select **app-vnet-firewall-rt**.
 
-1. Select **app-vnet-firewall-rt**.
+1. In the **Settings** blade, select **Subnets** and then **+ Associate**.
 
-1. Select **Subnets**.
-
-1. Select **+ Associate**.
-
-1. On the **Associate subnet** page, enter the information as listed in the table below:
+1. Configure an association to the frontend subnet, then select **OK**.  
 
     | Property        | Value              |
     | :-------------- | :----------------- |
     | Virtual network | **app-vnet (RG1)** |
     | Subnet          | **frontend**       |
 
-1. Select **OK**.
+1. Configure an association to the backend subnet, then select **OK**.  
 
-1. Repeat the steps above to associate the **app-vnet-firewall-rt** route table to the **backend** subnet in **app-vnet**.
+    | Property        | Value              |
+    | :-------------- | :----------------- |
+    | Virtual network | **app-vnet (RG1)** |
+    | Subnet          | **frontend**       |
 
 ### Create a route in the route table
 
-1. In the search box, enter **Route tables**. and select Route Tables from the search results.
+1. In the portal, continue working with the route table, select **app-vnet-firewall-rt**.
 
-1. Select **app-vnet-firewall-rt**.
+1. In the **Settings** blade, select **Routes** and then **+ Add**.
 
-1. Select **Routes**.
-
-1. Select **+ Add**.
-
-1. On the **Add route** page, enter the information as listed in the table below:
+1. Configure the route, then select **Add**. 
 
     | Property                            | Value                                                   |
     | :---------------------------------- | :------------------------------------------------------ |
@@ -91,9 +84,8 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
     | Destination type                    | **IP addresses**                                        |
     | Destination IP addresses/CIDR range | **0.0.0.0/0**                                           |
     | Next hop type                       | **Virtual appliance**                                   |
-    | Next hop address                    | **private IP address of the firewall recorded earlier** |
+    | Next hop address                    | **private IP address of the firewall** |
 
-1. Select **Add**.
 
 ### Learn more with online training
 
