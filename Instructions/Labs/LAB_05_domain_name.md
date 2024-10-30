@@ -69,7 +69,7 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
 
 1. In the **DNS Management** blade, select **+ Recordsets**.
 
-1. Notice that two A records have automically been created for each of the virtual machines. 
+1. Notice that two A records have automatically been created for each of the virtual machines. 
 
 1. Select **+ Add** and configure a record set. When finished select **Add**. 
    
