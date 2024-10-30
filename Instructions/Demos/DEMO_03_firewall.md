@@ -52,7 +52,9 @@ This is the network rule that allows outbound access to two IP addresses at port
 10.	For Protocol, select UDP.
 11.	For Destination Ports, enter 53.
 12.	For Destination type select IP address.
-13.	For Destination, enter 209.244.0.3, 209.244.0.4.
+
+>**Note**: Students should now be able to complete LAB_04
+14.	For Destination, enter 209.244.0.3, 209.244.0.4.
 These are public DNS servers operated by CenturyLink.
-14.	Select Add.
+15.	Select Add.
 
