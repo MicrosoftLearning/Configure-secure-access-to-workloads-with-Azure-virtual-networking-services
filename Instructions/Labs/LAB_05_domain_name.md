@@ -59,7 +59,7 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
     | Virtual network          | **app-vnet**      |
     | Enable auto registration | **Enabled**       |
 
-1. Select **Create**
+1. Select **Create** and wait for the deployment to finish. If necessary, **Refresh** the page. 
 
 ### Create a DNS record set
 
@@ -69,6 +69,8 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
 
 1. In the **DNS Management** blade, select **+ Recordsets**.
 
+1. Notice that two A records have automically been created for each of the virtual machines. 
+
 1. Select **+ Add** and configure a record set. When finished select **Add**. 
    
     | Property   | Value        |
@@ -76,9 +78,9 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
     | Name       | `backend`    |
     | Type       | **A**        |
     | TTL        | **1**        |
-    | IP address | **10.1.1.4** |
+    | IP address | **10.1.1.5** |
 
->**Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of 10.1.1.4.
+>**Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of 10.1.1.5.
 
 ### Learn more with online training
 
