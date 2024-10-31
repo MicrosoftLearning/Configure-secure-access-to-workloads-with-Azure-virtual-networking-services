@@ -17,10 +17,10 @@ Your organization requires control of the network traffic to and from the web ap
 
 ### Skilling tasks
 
-- Create an NSG.
-- Create NSG rules.
-- Associate an NSG to a subnet.
-- Create and use Application Security Groups in NSG rules.
+- Create a network security group.
+- Create network security group rules.
+- Associate a network security group to a subnet.
+- Create and use application security groups in network security group rules.
 
 ## Exercise instructions
 
