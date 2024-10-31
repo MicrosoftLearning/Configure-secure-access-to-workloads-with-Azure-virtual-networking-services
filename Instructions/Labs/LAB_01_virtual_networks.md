@@ -16,9 +16,9 @@ You have been tasked with applying [Zero Trust principles](https://learn.microso
 
 ### Skilling tasks
 
-- Create a virtual network
-- Create a subnet
-- Configure vnet peering
+- Create a virtual network.
+- Create a subnet.
+- Configure vnet peering.
 
 ## Exercise instructions
 
