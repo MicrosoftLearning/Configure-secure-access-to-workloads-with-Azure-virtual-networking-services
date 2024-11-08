@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise: Protect the web application from malicious traffic and block unauthorized access'
+    title: 'Exercise 03: Create and configure Azure Firewall'
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
@@ -8,22 +8,24 @@ lab:
 
 ## Scenario
 
-Your organization is looking to protect the web application from malicious traffic and block unauthorized access.
-
-In addition to NSG and ASG, a firewall can be configured to add an extra layer of security to the web application. A firewall protects the web application from malicious traffic and blocks unauthorized access with policies you configure.
-
-Azure Firewall policy is a top-level resource that contains security and operational settings for Azure Firewall. It allows you to define a rule hierarchy and enforce compliance. In this task you configure application rules and network rules for the firewall using Firewall Policy. You can use Azure Firewall Policy to manage rule sets that the Azure Firewall uses to filter traffic.
-
-### Architecture diagram
-
-![Diagram that shows one virtual network with a firewall and route table.](../Media/task-3.png)
+Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection will be needed. Also, it is expected the application will need continuous updates from Azure DevOps pipelines. You identify these requirements.
++ Azure Firewall is required for additional security in the app-vnet. 
++ A **firewall policy** should be configured to help manage access to the application. 
++ A firewall policy **application rule** is required. This rule will allow the application access to Azure DevOps so the application code can be updated. 
++ A firewall policy **network rule** is required. This rule will allow DNS resolution. 
 
 ### Skilling tasks
 
-- Create an Azure Firewall.
-- Create and configure a firewall policy
-- Create an application rule collection.
-- Create a network rule collection.
++ Create an Azure Firewall.
++ Create and configure a firewall policy
++ Create an application rule collection.
++ Create a network rule collection.
+
+## Architecture diagram
+
+![Diagram that shows one virtual network with a firewall and route table.](../Media/task-3.png)
+
+
   
 ## Exercise instructions
 
