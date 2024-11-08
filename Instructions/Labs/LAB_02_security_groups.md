@@ -26,7 +26,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 ### Create the network infrastructure for the exercise
 
->**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
 
 1. Use the icon (top right) to launch a **Cloud Shell** session. Alternately, navigate directly to `https://shell.azure.com`.
 
@@ -61,7 +61,7 @@ Your organization requires control of the network traffic to and from the web ap
 
 1. Select **Review + create** and then select **Create**.
 
->**Note**: You are creating the application security group in the same region as the existing virtual network.
+**Note**: You are creating the application security group in the same region as the existing virtual network.
 
 **Associate the application security group to the network interface of the VM**
 
