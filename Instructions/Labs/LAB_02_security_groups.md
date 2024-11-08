@@ -4,7 +4,7 @@ lab:
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Control the network traffic to and from the web application
+# Exercise 02: Create and configure network security groups
 
 ## Scenario
 
