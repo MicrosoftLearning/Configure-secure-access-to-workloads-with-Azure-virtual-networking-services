@@ -27,7 +27,7 @@ Your organization requires workloads to use domain names instead of IP addresses
 
 ## Exercise instructions
 
-**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/All-labs/create-vnet-subnets-template.json) is provided if you need to deploy those resources.
 
 ### Create a private DNS zone
 
