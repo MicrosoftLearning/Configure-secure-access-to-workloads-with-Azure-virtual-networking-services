@@ -44,7 +44,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     | Name          | **AzureFirewallSubnet** |
     | Address range | **10.1.63.0/26**        |
 
-    > **Note**: Leave all other settings as default.
+**Note**: Leave all other settings as default.
 
 ### Create an Azure Firewall
 
@@ -99,7 +99,7 @@ Azure Firewall policy is a top-level resource that contains security and operati
     | Destination type | **FQDN**                                  |
     | Destination      | `dev.azure.com, azure.microsoft.com` |
 
->**Note**: The **AllowAzurePipelines** rule allows the web application to access Azure Pipelines. The rule allows the web application to access the Azure DevOps service and the Azure website.
+**Note**: The **AllowAzurePipelines** rule allows the web application to access Azure Pipelines. The rule allows the web application to access the Azure DevOps service and the Azure website.
 
 ### Add a network rule
 
