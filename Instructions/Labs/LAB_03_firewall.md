@@ -4,7 +4,7 @@ lab:
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Protect the web application from malicious traffic and block unauthorized access
+# Exercise 03: Create and configure Azure Firewall
 
 ## Scenario
 
