@@ -1,24 +1,29 @@
 ---
 lab:
-    title: 'Exercise: Record and resolve domain names internally'
+    title: 'Exercise 05: Create DNS zones and configure DNS settings'
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Record and resolve domain names internally
+# Exercise 05: Create DNS zones and configure DNS settings
 
 ## Scenario
 
-Your organization requires workloads to record and resolve domain names internally in virtual networks. Virtual machines in virtual networks can use domain name instead of IPs for internal communication. In that case, the domain names will be resolved with a private DNS zone through a virtual network link.
+Your organization requires workloads to use domain names instead of IP addresses for internal communications.  The organization doesn’t want to add a custom DNS solution. You identify these requirements.
++ A **private DNS zone** is required for contoso.com.
++ The DNS will use a  **virtual network link** to app-vnet. 
++ A new **DNS record** is required for the backend subnet. 
 
-### Architecture diagram
+## Skilling tasks
+
++ Create and configure a private DNS zone.
++ Create and configure DNS records.
++ Configure DNS settings on a virtual network.
+  
+## Architecture diagram
 
 ![Diagram of Azure DNS linked to a virtual network.](../Media/task-5.png)
 
-### Skilling tasks
 
-- Create and configure a private DNS zone.
-- Create and configure DNS records.
-- Configure DNS settings on a virtual network.
 
 ## Exercise instructions
 
