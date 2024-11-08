@@ -1,14 +1,19 @@
 ---
 lab:
-    title: 'Exercise: Provide network isolation and segmentation for the web application'
+    title: 'Exercise 01: Create and configure virtual networks'
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Provide a shared services hub virtual network with isolation and segmentation
+# Exercise 01: Create and configure virtual networks
 
 ## Scenario
 
-You have been tasked with applying [Zero Trust principles](https://learn.microsoft.com/security/zero-trust/azure-infrastructure-networking) to a hub virtual network in Azure. The IT department needs network isolation and segmentation for the web application in a spoke network. To provide network isolation and segmentation for the web application, you need to create an Azure virtual network with subnets with address space that the IT team provided. Once the virtual network is created, the next step is to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
+Your organization is migrating a web-based application to Azure. Your first task is to put in place the virtual networks and subnets. You also need to securely peer the virtual networks. You identify these requirements.	
++ Two virtual networks are required, **app-vnet** and **hub-vnet**. This simulates a hub and spoke network architecture. 
++ The app-vnet will host the application. This virtual network requires two subnets. The **frontend subnet** will host the web servers. The **backend subnet** will host the database servers.
++ The hub-vnet only requires a subnet for the firewall. 
++ The two virtual networks must be able to communicate with each other securely and privately through **virtual network peering**. 
++ Both virtual networks should be in the same region. 
 
 ## Skilling tasks
 
