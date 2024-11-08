@@ -10,15 +10,15 @@ lab:
 
 You have been tasked with applying [Zero Trust principles](https://learn.microsoft.com/security/zero-trust/azure-infrastructure-networking) to a hub virtual network in Azure. The IT department needs network isolation and segmentation for the web application in a spoke network. To provide network isolation and segmentation for the web application, you need to create an Azure virtual network with subnets with address space that the IT team provided. Once the virtual network is created, the next step is to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
 
-### Architecture diagram
+## Skilling tasks
+
++ Create a virtual network.
++ Create a subnet.
++ Configure vnet peering.
+
+## Architecture diagram
 
 ![Diagram that shows two virtual networks that are peered.](../Media/task-1.png)
-
-### Skilling tasks
-
-- Create a virtual network.
-- Create a subnet.
-- Configure vnet peering.
 
 ## Exercise instructions
 
