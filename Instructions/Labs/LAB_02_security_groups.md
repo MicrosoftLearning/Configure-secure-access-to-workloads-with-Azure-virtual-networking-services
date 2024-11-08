@@ -33,7 +33,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 ### Create the network infrastructure for the exercise
 
-**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/All-Labs/create-vnet-subnets-template.json) is provided if you need to deploy those resources.
 
 1. Use the icon (top right) to launch a **Cloud Shell** session. Alternately, navigate directly to `https://shell.azure.com`.
 
