@@ -1,24 +1,27 @@
 ---
 lab:
-    title: 'Exercise: Route traffic to the Firewall'
+    title: 'Exercise 04: Configure network routing'
     module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
 ---
 
-# Lab: Route traffic to the Firewall
+# Exercise 04: Configure network routing
 
 ## Scenario
 
-Now that a firewall is in place with policies that enforce your organizations security requirements, you need to route your network traffic to the firewall subnet so it can filter and inspect the traffic. Route tables provide control over the routing of network traffic to and from the web application. Network Traffic is subject to the firewall rules when you route your network traffic to the firewall as the subnet default gateway.
+To ensure the firewall policies are enforced, outbound application traffic must be routed through the firewall. You identify these requirements. 
++ A route table is required. This route table will be associated with the frontend and backend subnets.  
++ A route is required to filter all outbound IP traffic from the subnets to the firewall. The firewall’s private IP address will be used. 
 
-### Architecture diagram
+## Skilling tasks
+
++ Create and configure a route table.
++ Link a route table to a subnet.
+  
+## Architecture diagram
 
 ![Diagram that shows one virtual network with a firewall and route table.](../Media/task-3.png)
 
-### Skilling tasks
 
-- Create and configure a route table.
-- Link a route table to a subnet.
-  
 ## Exercise instructions
 
 ### Create a route table
