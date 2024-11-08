@@ -22,9 +22,7 @@ You have been tasked with applying [Zero Trust principles](https://learn.microso
 
 ## Exercise instructions
 
->**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/) with **Contributor** RBAC role assigned.
-
-> In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
+**Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/) with **Contributor** RBAC role assigned. In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
 
 ### Create hub and spoke virtual networks and subnets
 
@@ -47,7 +45,7 @@ An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/vir
     | Subnet name          | `backend`     |
     | Subnet address range | **10.1.1.0/24** |
 
-    **Note**: Leave all other settings as their defaults. When finished select **"Review + create** and then **Create**.
+    **Note**:Leave all other settings as their defaults. When finished select **"Review + create** and then **Create**.
    
 1. Create the **Hub-vnet** virtual network configuration. This virtual network has the firewall subnet. 
 
