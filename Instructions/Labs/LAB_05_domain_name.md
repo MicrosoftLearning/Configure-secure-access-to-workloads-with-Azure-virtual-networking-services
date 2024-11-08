@@ -22,7 +22,7 @@ Your organization requires workloads to record and resolve domain names internal
 
 ## Exercise instructions
 
->**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
+**Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/02/vnet-subnets-template.json) is provided if you need to deploy those resources.
 
 ### Create a private DNS zone
 
@@ -80,7 +80,7 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
     | TTL        | **1**        |
     | IP address | **10.1.1.5** |
 
->**Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of 10.1.1.5.
+**Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of 10.1.1.5.
 
 ### Learn more with online training
 
