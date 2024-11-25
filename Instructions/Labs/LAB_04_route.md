@@ -71,7 +71,7 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
     | Property        | Value              |
     | :-------------- | :----------------- |
     | Virtual network | **app-vnet (RG1)** |
-    | Subnet          | **frontend**       |
+    | Subnet          | **backend**       |
 
 ### Create a route in the route table
 
