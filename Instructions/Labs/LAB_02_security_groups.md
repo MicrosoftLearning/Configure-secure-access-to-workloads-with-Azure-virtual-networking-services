@@ -63,7 +63,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
     | :------------- | :--------------------------- |
     | Subscription   | **Select your subscription** |
     | Resource group | **RG1**                      |
-    | Name           | `app-backend-asg`          |
+    | Name           | `app-frontend-asg`          |
     | Region         | **East US**                  |
 
 1. Select **Review + create** and then select **Create**.
@@ -76,7 +76,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 1. In the **Networking** blade, select **Application security groups** and then select **Add application security groups**.
 
-1. Select the **app-backend-asg** and then select **Add**.
+1. Select the **app-frontend-asg** and then select **Add**.
    
 ### Create and Associate the Network Security Group
 
