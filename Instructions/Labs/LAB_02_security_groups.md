@@ -41,7 +41,9 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 1. Storage is not required for this task Select your subscription. 
 
-1. Deploy the virtual machines required for this exercise. 
+1. Deploy the virtual machines required for this exercise.
+
+>**Note**: Ifthe deployment fails for capacity restriction, edit the template and change the "location" value. 
 
    ```powershell
    $RGName = "RG1"
