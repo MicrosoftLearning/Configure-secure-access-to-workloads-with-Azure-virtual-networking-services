@@ -41,7 +41,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 1. Use these commands to deploy the virtual machines required for this exercise.
 
->**Note**: Ifthe deployment fails for capacity restriction, edit the template and change the "location" value. 
+>**Note**: If the deployment fails for capacity restriction, edit the template and change the "location" value. 
 
    ```powershell
    $RGName = "RG1"
