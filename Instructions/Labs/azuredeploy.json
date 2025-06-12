@@ -40,13 +40,13 @@
             "name": "[parameters('publicIPAddresses_VM1_ip_name')]",
             "location": "eastus",
             "sku": {
-                "name": "Basic",
+                "name": "Standard",
                 "tier": "Regional"
             },
             "properties": {
                 "ipAddress": "40.87.123.79",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "ipTags": []
             }
@@ -57,13 +57,13 @@
             "name": "[parameters('publicIPAddresses_VM2_ip_name')]",
             "location": "eastus",
             "sku": {
-                "name": "Basic",
+                "name": "Standard",
                 "tier": "Regional"
             },
             "properties": {
                 "ipAddress": "40.87.123.72",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "ipTags": []
             }
