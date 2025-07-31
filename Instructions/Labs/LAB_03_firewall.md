@@ -70,6 +70,7 @@ Your organization requires centralized network security for the application virt
     | Choose a virtual network | **Use existing**                                  |
     | Virtual network          | **app-vnet** (RG1)                                |
     | Public IP address        | Add new: **fwpip**                                |
+    | Enable Firewall Management NIC | **uncheck the box**                         |
 
     [Learn more on creating a firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal).
 
