@@ -21,6 +21,8 @@ Your organization is migrating a web-based application to Azure. Your first task
 + Create a subnet.
 + Configure vnet peering.
 
+## Estimated timing: 20 minutes
+
 ## Architecture diagram
 
 ![Diagram that shows two virtual networks that are peered.](../Media/task-1.png)
