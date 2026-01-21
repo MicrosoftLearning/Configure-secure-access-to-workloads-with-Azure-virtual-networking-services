@@ -23,7 +23,7 @@ Your organization requires workloads to use domain names instead of IP addresses
 
 ![Diagram of Azure DNS linked to a virtual network.](../Media/task-5.png)
 
-
+## Estimated timing: 20 minutes
 
 ## Exercise instructions
 
