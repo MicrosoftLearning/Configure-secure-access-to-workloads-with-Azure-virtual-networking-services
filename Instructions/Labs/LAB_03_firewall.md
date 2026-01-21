@@ -25,7 +25,7 @@ Your organization requires centralized network security for the application virt
 
 ![Diagram that shows one virtual network with a firewall and route table.](../Media/task-3.png)
 
-
+## Estimated timing: 25 minutes
   
 ## Exercise instructions
 
