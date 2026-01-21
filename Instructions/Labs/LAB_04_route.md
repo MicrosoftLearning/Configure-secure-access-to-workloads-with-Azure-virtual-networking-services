@@ -21,6 +21,7 @@ To ensure the firewall policies are enforced, outbound application traffic must 
 
 ![Diagram that shows one virtual network with a firewall and route table.](../Media/task-3.png)
 
+## Estimated timing: 20 minutes
 
 ## Exercise instructions
 
