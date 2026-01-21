@@ -20,12 +20,15 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 + Associate a network security group to a subnet.
 + Create and use application security groups in network security group rules.
 
+
+
 ## Architecture diagram
 
 ![Diagram that shows one ASG and NSG associated to a virtual network.](../Media/task-2.png)
 
 
 
+## Estimated timing: 25 minutes
 
 ## Exercise instructions
 
