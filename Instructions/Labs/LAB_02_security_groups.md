@@ -32,7 +32,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 ## Exercise instructions
 
-### Create the network infrastructure for the exercise
+## Create the network infrastructure for the exercise
 
 **Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/All-Labs/create-vnet-subnets-template.json) is provided if you need to deploy those resources.
 
@@ -54,7 +54,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
   
 1. In the portal search for and select `virtual machines`. Verify both vm1 and vm2 are **Running**.
 
-### Create Application Security Group
+## Create Application Security Group
 
 [Application security groups (ASGs)](https://learn.microsoft.com/azure/virtual-network/application-security-groups) let you group together servers with similar functions. For example, all the web servers hosting your application. 
 
@@ -81,7 +81,7 @@ Your organization requires the network traffic in the app-vnet to be tightly con
 
 1. Select the **app-frontend-asg** and then select **Add**.
    
-### Create and Associate the Network Security Group
+## Create and Associate the Network Security Group
 
 [Network security groups (NSGs)](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview) secure network traffic in a virtual network. 
 
@@ -110,7 +110,7 @@ NSGs can be associated with subnets and/or individual network interfaces attache
 
 1. Select **app-vnet (RG1)** and then the **Backend** subnet. Select **OK**.
 
-### Create Network Security Group rules
+## Create Network Security Group rules
 
 An NSG use [security rules](https://learn.microsoft.com/azure/virtual-network/network-security-group-how-it-works) to filter inbound and outbound network traffic. 
 
@@ -134,12 +134,12 @@ An NSG use [security rules](https://learn.microsoft.com/azure/virtual-network/ne
     | Name                                   | **AllowSSH**                   |
 
 
-### Learn more with online training
+## Learn more with online training
 
 + [Filter network traffic with a network security group using the Azure portal](https://learn.microsoft.com/training/modules/filter-network-traffic-network-security-group-using-azure-portal/). In this module, you focus on filtering network traffic using Network Security Groups (NSGs) in the Azure portal. Learn how to create, configure, and apply NSGs for improved network security.
 + [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://learn.microsoft.com/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). In this module, you learn about network security groups and how to restrict network connectivity. 
 
-### Key takeaways
+## Key takeaways
 
 Congratulations on completing the exercise. Here are the main takeaways:
 
