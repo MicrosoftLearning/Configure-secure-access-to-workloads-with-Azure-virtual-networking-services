@@ -29,7 +29,7 @@ Your organization requires workloads to use domain names instead of IP addresses
 
 **Note:** This exercise requires the Lab 01 virtual networks and subnets to be installed. A [template](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Allfiles/Labs/All-Labs/create-vnet-subnets-template.json) is provided if you need to deploy those resources.
 
-### Create a private DNS zone
+## Create a private DNS zone
 
 [Azure Private DNS](https://learn.microsoft.com/azure/dns/private-dns-overview) provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names.
 
@@ -48,7 +48,7 @@ Your organization requires workloads to use domain names instead of IP addresses
 
 1. Wait for the DNS zone to deploy, and then select **Go to resource**. 
 
-### Create a virtual network link to your private DNS zone
+## Create a virtual network link to your private DNS zone
 
 To resolve DNS records in a private DNS zone, resources must  be linked to the private zone. A [virtual network link](https://learn.microsoft.com/azure/dns/private-dns-virtual-network-links) associates the virtual network to the private zone.
 
@@ -66,7 +66,7 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
 
 1. Select **Create** and wait for the deployment to finish. If necessary, **Refresh** the page. 
 
-### Create a DNS record set
+## Create a DNS record set
 
 [DNS records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records#dns-records) provide information about the DNS zone. 
 
@@ -87,12 +87,12 @@ To resolve DNS records in a private DNS zone, resources must  be linked to the p
 
 **Note:** This record set implies there is a virtual machine in app-vnet with a private IP address of 10.1.1.5.
 
-### Learn more with online training
+## Learn more with online training
 
 + [Introduction to Azure DNS](https://learn.microsoft.com/training/modules/intro-to-azure-dns/). This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
 + [Host your domain on Azure DNS](https://learn.microsoft.com/training/modules/host-domain-azure-dns/). In this module, you learn how to create a DNS zone and DNS records.
 
-### Key takeaways
+## Key takeaways
 
 Congratulations on completing the exercise. Here are the main takeaways:
 
