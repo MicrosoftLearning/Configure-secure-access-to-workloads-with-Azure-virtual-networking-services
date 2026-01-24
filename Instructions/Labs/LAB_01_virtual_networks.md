@@ -33,7 +33,7 @@ Your organization is migrating a web-based application to Azure. Your first task
 
 **Note**: To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/) with **Contributor** RBAC role assigned. In this lab, when you are asked to create a resource, for any properties that are not specified, use the default value.
 
-### Create hub and spoke virtual networks and subnets
+## Create hub and spoke virtual networks and subnets
 
 An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/virtual-networks-overview) enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. All Azure resources in a virtual network are deployed into [subnets](https://learn.microsoft.com/azure/virtual-network/virtual-network-manage-subnet?tabs=azure-portal) within the virtual network. 
 
@@ -71,7 +71,7 @@ An [Azure virtual network](https://learn.microsoft.com/azure/virtual-network/vir
 
 1. Verify your virtual networks and subnets were deployed. 
 
-### Configure a peer relationship between the virtual networks
+## Configure a peer relationship between the virtual networks
 
 [Virtual network peering](https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview) enables you to seamlessly connect two or more Virtual Networks in Azure. 
 
