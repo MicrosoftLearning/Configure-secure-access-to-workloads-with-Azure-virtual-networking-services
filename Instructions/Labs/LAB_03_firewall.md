@@ -14,7 +14,7 @@ Your organization requires centralized network security for the application virt
 + A firewall policy **application rule** is required. This rule will allow the application access to Azure DevOps so the application code can be updated. 
 + A firewall policy **network rule** is required. This rule will allow DNS resolution. 
 
-### Skilling tasks
+## Skilling tasks
 
 + Create an Azure Firewall.
 + Create and configure a firewall policy
@@ -29,7 +29,7 @@ Your organization requires centralized network security for the application virt
   
 ## Exercise instructions
 
-### Create  Azure Firewall subnet in our existing virtual network
+## Create  Azure Firewall subnet in our existing virtual network
 
 1. In the search box at the top of the portal, enter **Virtual networks**. Select **Virtual networks** in the search results.
 
@@ -48,7 +48,7 @@ Your organization requires centralized network security for the application virt
 
 **Note**: Leave all other settings as default.
 
-### Create an Azure Firewall
+## Create an Azure Firewall
 
 1. In the search box at the top of the portal, enter **Firewall**. Select **Firewall** in the search results.
 
@@ -76,13 +76,13 @@ Your organization requires centralized network security for the application virt
 
 1. Select **Review + create** and then select **Create**.
 
-### Update the Firewall Policy
+## Update the Firewall Policy
 
 1. In the portal, search for and select `Firewall Policies`. 
 
 1. Select **fw-policy**.
 
-### Add an application rule
+## Add an application rule
 
 1. In the **Settings** blade, select **Application rules** and then **Add a rule collection**.
 
@@ -104,7 +104,7 @@ Your organization requires centralized network security for the application virt
 
 **Note**: The **AllowAzurePipelines** rule allows the web application to access Azure Pipelines. The rule allows the web application to access the Azure DevOps service and the Azure website.
 
-### Add a network rule
+## Add a network rule
 
 1. In the **Settings** blade, select **Network rules** and then **Add a network collection**.
 
@@ -123,7 +123,7 @@ Your organization requires centralized network security for the application virt
     | Destination ports     | `53`               |
     | Destination addresses | **1.1.1.1, 1.0.0.1** |
 
-### Verify the firewall and firewall policy status
+## Verify the firewall and firewall policy status
 
 1. In the portal search for and select **Firewall**. 
 
@@ -133,12 +133,12 @@ Your organization requires centralized network security for the application virt
 
 1. View the **fw-policy** and ensure the **Provisioning state** is **Succeeded**. This may take a few minutes.
 
-### Learn more with online training
+## Learn more with online training
 
 + [Introduction to Azure Firewall](https://learn.microsoft.com/training/modules/introduction-azure-firewall/). In this module, you learn about how Azure Firewall features, rules, deployment options, and administration.
 + [Introduction to Azure Firewall Manager](https://learn.microsoft.com/training/modules/intro-to-azure-firewall-manager/). In this moudle, you learn how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
 
-### Key takeaways
+## Key takeaways
 
 Congratulations on completing the exercise. Here are the main takeaways:
 
