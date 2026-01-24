@@ -25,7 +25,7 @@ To ensure the firewall policies are enforced, outbound application traffic must 
 
 ## Exercise instructions
 
-### Create a route table
+## Create a route table
 
 Azure automatically creates a [route table](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview) for each subnet within an Azure virtual network. The route table includes the default [system  routes](https://learn.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#system-routes). You can create route tables and routes to override Azure's default system routes.
 
@@ -54,7 +54,7 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
 
 1. Wait for the route table to deploy, then select **Go to resource**.  
 
-### Associate the route table to the subnets
+## Associate the route table to the subnets
 
 1. In the portal, continue working with the route table, select **app-vnet-firewall-rt**.
 
@@ -74,7 +74,7 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
     | Virtual network | **app-vnet (RG1)** |
     | Subnet          | **backend**       |
 
-### Create a route in the route table
+## Create a route in the route table
 
 1. In the portal, continue working with the route table, select **app-vnet-firewall-rt**.
 
@@ -91,11 +91,11 @@ Azure automatically creates a [route table](https://learn.microsoft.com/azure/vi
     | Next hop address                    | **private IP address of the firewall** |
 
 
-### Learn more with online training
+## Learn more with online training
 
 + [Manage and control traffic flow in your Azure deployment with routes](https://learn.microsoft.com/training/modules/control-network-traffic-flow-with-routes/). In this module, you learn how to control Azure virtual network traffic by implementing custom routes. This module has two sandboxes. 
 
-### Key takeaways
+## Key takeaways
 
 Congratulations on completing the exercise. Here are the main takeaways:
 
