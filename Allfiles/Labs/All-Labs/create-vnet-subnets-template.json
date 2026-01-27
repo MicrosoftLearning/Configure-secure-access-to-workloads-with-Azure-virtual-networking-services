@@ -17,7 +17,7 @@
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2024-01-01",
             "name": "[parameters('virtualNetworks_app_vnet_name')]",
-            "location": "eastus",
+            "location": "eastus2",
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
@@ -64,7 +64,7 @@
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2024-01-01",
             "name": "[parameters('virtualNetworks_hub_vnet_name')]",
-            "location": "eastus",
+            "location": "eastus2",
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
