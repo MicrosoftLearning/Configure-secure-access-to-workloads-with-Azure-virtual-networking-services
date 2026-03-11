@@ -2,10 +2,14 @@
 lab:
   title: 'Exercise 02: Create and configure network security groups'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
-  description: An NSG use security rules to filter inbound and outbound network traffic.
+  description: Create and confgure network and application security groups. 
   duration: 25 minutes
-  level: 400
+  level: 300
   islab: true
+  primarytopics:
+  - Azure
+  - Network security groups
+  - Application security groups
 ---
 
 # Exercise 02: Create and configure network security groups
