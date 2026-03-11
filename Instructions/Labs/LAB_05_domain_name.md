@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Exercise 05: Create DNS zones and configure DNS settings'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 05: Create DNS zones and configure DNS settings'
+  module: Guided Project - Configure secure access to workloads with Azure virtual
+    networking services
+  description: Your organization requires workloads to use domain names instead of
+    IP addresses for internal communications.  The organization doesn’t want to add
+    a custom DNS solution. You identify these requirements.
+  duration: 20 minutes
+  level: 300
+  islab: true
 ---
 
 # Exercise 05: Create DNS zones and configure DNS settings
