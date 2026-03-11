@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Exercise 01: Create and configure virtual networks'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 01: Create and configure virtual networks'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: An Azure virtual network enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. All Azure resources in a virtual network are deployed into subnets within the virtual network.
+  duration: 20 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Network
 ---
 
 # Exercise 01: Create and configure virtual networks
