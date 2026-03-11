@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Exercise 05: Create DNS zones and configure DNS settings'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 05: Create DNS zones and configure DNS settings'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Azure Private DNS provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. By using private DNS zones, you can use your own custom domain names rather than the Azure-provided names.
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
 ---
 
 # Exercise 05: Create DNS zones and configure DNS settings
