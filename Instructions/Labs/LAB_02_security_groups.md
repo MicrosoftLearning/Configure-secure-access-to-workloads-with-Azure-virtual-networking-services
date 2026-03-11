@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Exercise 02: Create and configure network security groups'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 02: Create and configure network security groups'
+  module: Guided Project - Configure secure access to workloads with Azure virtual
+    networking services
+  description: Your organization requires the network traffic in the app-vnet to be
+    tightly controlled. You identify these requirements.
+  duration: 25 minutes
+  level: 400
+  islab: true
 ---
 
 # Exercise 02: Create and configure network security groups
