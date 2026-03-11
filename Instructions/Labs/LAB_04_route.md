@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Exercise 04: Configure network routing'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 04: Configure network routing'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Azure automatically creates a route table for each subnet within an Azure virtual network. The route table includes the default system routes. You can create route tables and routes to override Azure's default system routes.
+  duration: 20 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Network
 ---
 
 # Exercise 04: Configure network routing
