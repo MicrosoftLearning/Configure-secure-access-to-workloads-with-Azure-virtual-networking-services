@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Exercise 01: Create and configure virtual networks'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 01: Create and configure virtual networks'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Create and configure virtual networks, subnets, and peering. 
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Network
 ---
 
 # Exercise 01: Create and configure virtual networks

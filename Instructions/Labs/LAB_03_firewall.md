@@ -1,7 +1,14 @@
 ---
 lab:
-    title: 'Exercise 03: Create and configure Azure Firewall'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 03: Create and configure Azure Firewall'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Create and configure Azure Firewall. 
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Firewall
 ---
 
 # Exercise 03: Create and configure Azure Firewall

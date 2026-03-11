@@ -1,7 +1,15 @@
 ---
 lab:
-    title: 'Exercise 02: Create and configure network security groups'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 02: Create and configure network security groups'
+  module: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: Create and confgure network and application security groups. 
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
+  - Network security groups
+  - Application security groups
 ---
 
 # Exercise 02: Create and configure network security groups
