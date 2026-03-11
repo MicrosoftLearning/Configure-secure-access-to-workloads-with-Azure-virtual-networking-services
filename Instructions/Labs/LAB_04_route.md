@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Exercise 04: Configure network routing'
-    module: 'Guided Project - Configure secure access to workloads with Azure virtual networking services'
+  title: 'Exercise 04: Configure network routing'
+  module: Guided Project - Configure secure access to workloads with Azure virtual
+    networking services
+  description: To ensure the firewall policies are enforced, outbound application
+    traffic must be routed through the firewall. You identify these requirements.
+  duration: 20 minutes
+  level: 400
+  islab: true
 ---
 
 # Exercise 04: Configure network routing
