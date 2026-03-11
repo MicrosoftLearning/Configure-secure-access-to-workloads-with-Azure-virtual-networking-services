@@ -2,13 +2,12 @@
 lab:
   title: 'Exercise 03: Create and configure Azure Firewall'
   module: Guided Project - Configure secure access to workloads with Azure virtual networking services
-  description: Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection will be needed. Also, it is expected the application will need continuous updates from Azure DevOps pipelines. You identify these requirements.
+  description: Create and configure Azure Firewall. 
   duration: 25 minutes
-  level: 500
+  level: 300
   islab: true
   primarytopics:
     - Azure
-    - Azure DevOps
     - Azure Firewall
 ---
 
