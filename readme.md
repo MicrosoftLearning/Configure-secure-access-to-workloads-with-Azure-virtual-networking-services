@@ -1,6 +1,6 @@
 # Configure secure access to workloads with Azure virtual networking services
 
-Link to demonstrations and labs **[HTML version](https://microsoftlearning.github.io/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/)**?
+Link to demonstrations and labs **[HTML version](https://microsoftlearning.github.io/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/)**.
 
 **Are you an MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 
